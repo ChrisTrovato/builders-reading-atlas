@@ -2,7 +2,7 @@
 
 ## What I tried
 
-Describe the real exercise, calculation, build, reading, or experiment. Name the part you completed personally and any tools or collaborators that assisted.
+Describe the exercise, calculation, build, reading, or experiment.
 
 ## Evidence
 
@@ -14,12 +14,12 @@ State the result. Include the mistake, failed assumption, or uncertainty if ther
 
 ## What I can explain now
 
-Explain one idea in your own words. Do not list a skill as mastered just because a tool produced an output.
+Explain one idea in your own words.
 
 ## Next small step
 
 Choose a specific test, question, or practice problem. Keep it manageable.
 
-## Assistance and sources
+## References
 
-Credit AI help, collaborators, books, and external references. Never include credentials, personal medical details, private chat exports, or other people's private information.
+Link useful books, documentation, and other references. Review the entry for personal information before sharing it.

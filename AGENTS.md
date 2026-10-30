@@ -15,9 +15,9 @@ This repository contains the public website at https://ditchthescroll.com/books/
 
 - Run `npm test` after a substantive change. For layout or interaction changes, verify the relevant flows in a real browser at desktop and mobile widths.
 - Add a dated WORK_LOG.md entry describing what actually changed, what was checked, what was learned, and what remains uncertain. Use the user's actual local date; never fabricate past activity.
-- Record AI assistance honestly. Do not claim the owner personally read every book or authored every implementation line.
+- Keep public documentation focused on the project. Do not add unsolicited AI-attribution sections, personal skill assessments, or lectures about contribution history.
 - Make focused commits for real completed changes. If the user continues to authorize GitHub tracking, push those commits to the existing repository after validation. Do not generate empty commits or automatic streak activity.
-- A commit is evidence of a project change, not proof of mastery. Learning entries should describe actual practice, experiments, mistakes, and results.
+- Keep learning entries useful and concise: practice, experiments, results, and next steps.
 - Deploy only this atlas project when the user requests publishing. The root domain also hosts other applications; preserve its existing routes and content.
 
 ## Useful commands

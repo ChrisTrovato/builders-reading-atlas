@@ -79,16 +79,6 @@ Reading fit, order, questions, and difficulty are editorial judgments. The prese
 
 The book covers are original typographic illustrations rather than publisher jackets. The catalog does not distribute book texts. Frontier concepts and models are educational material, not deployable engineering specifications.
 
-## Ownership, assistance, and evidence
-
-This is an AI-assisted project developed with Codex from the owner’s product direction and interests. Research, implementation, editorial drafting, and testing used AI assistance. The repository records the work transparently; it does not claim that the owner personally authored every line or read every book.
-
-The initial Git commit imports an existing public 200-book site on the date it was added to version control. It is not a reconstruction of earlier daily activity. Subsequent commits document real changes. There are no empty streak commits or fabricated historical dates.
-
-For future learning entries, record what you actually tried, the result, what you can explain, and what you want to test next. Link evidence and credit assistance. A thoughtful explanation of a small experiment can tell a reviewer more than a contribution count alone.
-
-See [GitHub’s contribution reference](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference) for how its profile graph works. This repository does not run a daily posting automation.
-
 ## Related public explorations
 
 - [The Factory That Builds the Future](https://factory-that-builds-the-future.vercel.app/)

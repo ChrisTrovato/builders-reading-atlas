@@ -1,10 +1,10 @@
 # Project work log
 
-This log records actual project work. It is not a record of books read or proof of subject mastery. Implementation and research are AI-assisted; personal learning entries should explain what the owner personally tried and understood.
+Development notes, changes, and validation for the Reading Atlas.
 
 ## 2026-10-30 — Import the existing public site
 
-Imported the public 200-book Reading Atlas into a dedicated Git repository. Preserved the live site's HTML, CSS, JavaScript, JSON, original illustrations, and hosting configuration. The commit was made today; earlier project activity has not been backdated or reconstructed.
+Imported the public 200-book Reading Atlas into a dedicated Git repository. Preserved the live site's HTML, CSS, JavaScript, JSON, original illustrations, and hosting configuration.
 
 ## 2026-10-30 — Expand the atlas and make it easier to enter
 
@@ -30,13 +30,13 @@ Imported the public 200-book Reading Atlas into a dedicated Git repository. Pres
 
 ### What this work demonstrates
 
-The project combines content modeling, static-site implementation, information design, browser-local persistence, accessibility review, automated integrity checks, and deployment work. The owner supplied the direction and iterative requirements; Codex assisted with research, writing, code, and validation.
+The project combines content modeling, static-site implementation, information design, browser-local persistence, accessibility review, automated integrity checks, and deployment work.
 
 ### Limits and next useful work
 
-Bibliographic research does not mean every book has been read. Some publisher pages block automated access, and source registers distinguish direct retrieval from search-based verification. Reading levels and relevance are editorial judgments. Personal study progress remains private in the browser unless deliberately exported and shared.
+Some publisher pages block automated access, and source registers distinguish direct retrieval from search-based verification. Reading levels and relevance are editorial judgments. Personal study progress remains private in the browser unless deliberately exported and shared.
 
-A useful next learning entry would explain one small implementation or engineering idea in the owner's own words, with a calculation, test, or revision as evidence. See `docs/LEARNING_LOG_TEMPLATE.md`.
+The learning-log template is available at `docs/LEARNING_LOG_TEMPLATE.md`.
 
 ### Publication verification
 
@@ -48,4 +48,8 @@ A useful next learning entry would explain one small implementation or engineeri
 - Pushed the baseline, expansion, and documentation commits to the public GitHub repository. GitHub attributed the commits to the owner’s account. The current canonical repository is https://github.com/ChrisTrovato/builders-reading-atlas.
 - The validation workflow was accepted and queued by GitHub Actions. Local validation passed; a queued remote run is not recorded as a pass.
 
-The repository is the ongoing source and project history for this atlas. Future work should add meaningful commits and dated evidence as it occurs; no unattended daily contribution automation has been configured.
+The repository is the ongoing source and project history for this atlas.
+
+## 2026-10-30 — Simplify project documentation
+
+Removed the unsolicited attribution section and personal-assessment language from the README, work log, and learning template. Kept the documentation focused on the project, its features, and its development.
