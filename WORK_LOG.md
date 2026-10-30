@@ -37,3 +37,15 @@ The project combines content modeling, static-site implementation, information d
 Bibliographic research does not mean every book has been read. Some publisher pages block automated access, and source registers distinguish direct retrieval from search-based verification. Reading levels and relevance are editorial judgments. Personal study progress remains private in the browser unless deliberately exported and shared.
 
 A useful next learning entry would explain one small implementation or engineering idea in the owner's own words, with a calculation, test, or revision as evidence. See `docs/LEARNING_LOG_TEMPLATE.md`.
+
+### Publication verification
+
+- Published the expanded site at https://ditchthescroll.com/books/.
+- Anonymous requests confirmed all 15 deployed site files matched the local release byte for byte.
+- Confirmed `/books` and `/books_to_read` redirect to `/books/`; the public page is indexable.
+- Verified the existing homepage remained byte-for-byte unchanged and the Factory and Beyond Earth routes still returned successfully.
+- Browser checks confirmed the starter picker, a newly added book's source and details, saved reading status and notes after reload, and field URLs after a filter change and reload.
+- Pushed the baseline, expansion, and documentation commits to the public GitHub repository. GitHub attributed the commits to the owner’s account. The current canonical repository is https://github.com/ChrisTrovato/builders-reading-atlas.
+- The validation workflow was accepted and queued by GitHub Actions. Local validation passed; a queued remote run is not recorded as a pass.
+
+The repository is the ongoing source and project history for this atlas. Future work should add meaningful commits and dated evidence as it occurs; no unattended daily contribution automation has been configured.
