@@ -1,0 +1,199 @@
+{
+  "editorialNote": "Original learning examples, not an accredited curriculum or admission plan. Sources explain the underlying principles; the aerospace connections and suggested bench exercises are editorial synthesis. Start with the algebra bridge. Preview later topics for motivation without expecting to master them yet.",
+  "bridges": [
+    {
+      "id": "algebra",
+      "title": "Algebra → making the parts fit",
+      "hook": "The unknown x can be a real gap you need to leave between two pieces of hardware.",
+      "future": "Algebra lets you rearrange a constraint to find a dimension, a mass allowance, or an actuator's required travel.",
+      "lesson": "Imagine a 300 mm rail holding two identical 80 mm blocks with one equal clearance at each end and one between the blocks. If each clearance is x, then 2 × 80 mm + 3x = 300 mm. Subtract 160 mm from both sides, then divide by three: x = 46.7 mm, rounded. Every operation preserves the equality. The useful habit is translating a physical layout into a statement you can check, then putting the result back into that layout. Algebra practice is rehearsal for this kind of constraint solving.",
+      "question": "The rail becomes 340 mm long. With the same two blocks and three equal clearances, what is x?",
+      "answer": "60 mm. The blocks occupy 160 mm, leaving 180 mm. Dividing that remainder among three clearances gives 60 mm each.",
+      "activity": "Sketch both layouts with a ruler. Label every dimension and add them back up.",
+      "source": {"label": "OpenStax · Linear equations in one variable", "url": "https://openstax.org/books/college-algebra-2e/pages/2-2-linear-equations-in-one-variable"}
+    },
+    {
+      "id": "functions",
+      "title": "Functions → predicting a machine's behavior",
+      "hook": "A function is a compact promise: give me this input, and my model predicts that output.",
+      "future": "Engineers use functions to describe position, temperature, force, power, and other quantities that change with operating conditions.",
+      "lesson": "A tabletop cart starts 0.20 m from a reference mark and moves at a steady 0.10 m/s. Its model is x(t) = 0.20 m + (0.10 m/s)t. After 3 s, x = 0.50 m. The intercept records where it started; the slope records how fast its position changes. Draw the axes with units before plotting. This simple straight line assumes constant speed. If the cart slows or hits an obstacle, the model stops describing the situation accurately. Learning a function includes learning where it applies.",
+      "question": "At what time does the model predict x = 0.80 m?",
+      "answer": "6 s. Subtract the starting 0.20 m, then divide 0.60 m by 0.10 m/s.",
+      "activity": "Draw predicted positions every second. Roll a toy cart and compare real observations with the straight-line assumption.",
+      "source": {"label": "OpenStax · Linear functions", "url": "https://openstax.org/books/college-algebra/pages/4-1-linear-functions"}
+    },
+    {
+      "id": "trigonometry",
+      "title": "Trigonometry → where the arm actually reaches",
+      "hook": "Rotate a mechanism, and a length turns into two different distances: across and up.",
+      "future": "Trigonometry connects angles to geometry in robot arms, aircraft attitude, linkages, and instrument pointing.",
+      "lesson": "Take one 20 cm link pivoting in a flat plane. At 30° above the horizontal, its tip is x = 20 cos(30°) ≈ 17.3 cm across and y = 20 sin(30°) = 10 cm up from the pivot. The link stays 20 cm long; its components change. This is the beginning of forward kinematics: predicting where a mechanism ends up from its joint settings. A multijoint robot adds more links and coordinate transformations, but this triangle remains part of the foundation.",
+      "question": "What are the tip coordinates when the link points straight up at 90°?",
+      "answer": "x = 0 cm and y = 20 cm, because cos(90°) = 0 and sin(90°) = 1.",
+      "activity": "Use a cardboard strip, paper fastener, and protractor to compare your predictions with measured tip positions.",
+      "source": {"label": "OpenStax · Right triangle trigonometry", "url": "https://openstax.org/books/precalculus-2e/pages/5-4-right-triangle-trigonometry"}
+    },
+    {
+      "id": "vectors",
+      "title": "Vectors → direction changes everything",
+      "hook": "Moving three meters east and four meters north is different from moving seven meters east.",
+      "future": "Vectors describe velocity, force, displacement, and orientation-related quantities in flight, robotics, and ocean vehicles.",
+      "lesson": "A robot moves 3 m east, then 4 m north. It travels 7 m along its route, but its displacement from the starting point is the vector (3 m, 4 m). The straight-line magnitude is √(3² + 4²) = 5 m. Distance traveled and displacement answer different questions. Components also make addition manageable: another 2 m west changes the displacement to (1 m, 4 m). Always declare what positive directions mean. A perfectly correct calculation in the wrong coordinate frame can still describe the wrong movement.",
+      "question": "A second robot moves 6 m east and 8 m north. What is its displacement magnitude?",
+      "answer": "10 m: √(6² + 8²) = √100. Its route length would be 14 m if it traveled those legs separately.",
+      "activity": "Draw routes on graph paper and compare route length with the arrow from start to finish.",
+      "source": {"label": "OpenStax · Vector components", "url": "https://openstax.org/books/university-physics-volume-1/pages/2-2-coordinate-systems-and-components-of-a-vector"}
+    },
+    {
+      "id": "derivatives",
+      "title": "Derivatives → how fast things are changing now",
+      "hook": "A machine's position tells you where it is. A derivative tells you how rapidly that position is changing.",
+      "future": "Derivatives connect position to velocity and velocity to acceleration; they also describe sensitivity and changing thermal behavior.",
+      "lesson": "Suppose a simplified cart model is x(t) = (0.5 m/s²)t². At t = 2 s it is 2 m from the origin; at 3 s it is 4.5 m away. Its average velocity over that second is 2.5 m/s. Differentiating gives v(t) = (1 m/s²)t, so its instantaneous velocity at 3 s is 3 m/s. Average and instantaneous rates are different. You will eventually use that distinction to describe controlled motion smoothly, rather than treating every movement as one constant-speed jump.",
+      "question": "What instantaneous velocity does this model predict at t = 4 s?",
+      "answer": "4 m/s. Substitute t = 4 s into v(t) = (1 m/s²)t. The units reduce correctly to m/s.",
+      "activity": "Plot five positions from the model. Notice how equal time steps produce progressively larger changes in position.",
+      "source": {"label": "OpenStax · Defining the derivative", "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"}
+    },
+    {
+      "id": "integrals",
+      "title": "Integrals → adding up what happened",
+      "hook": "A flow meter reports liters per minute. A habitat operator needs to know how many liters actually moved.",
+      "future": "Integration accumulates changing rates: distance from velocity, water from flow, or energy from power.",
+      "lesson": "If a pump transfers water at 2 L/min for 3 min, it moves 6 L. On a flow-versus-time plot, that is a rectangle with area 2 × 3. Now imagine flow rises steadily from 0 to 2 L/min over those 3 min. The area is a triangle, so only 3 L moves. An integral generalizes this adding-up process to changing rates. The units are a useful guide: L/min multiplied by min leaves liters. An impressive peak rate alone does not tell you the total delivered.",
+      "question": "A constant 40 W device runs for 2 h. How much energy does it use?",
+      "answer": "80 Wh. Power multiplied by elapsed time gives energy. This equals 288,000 J because one hour is 3,600 seconds.",
+      "activity": "Draw a rectangle and triangle under the two flow models. Compare their areas before learning integral notation.",
+      "source": {"label": "OpenStax · The definite integral", "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"}
+    },
+    {
+      "id": "differential-equations",
+      "title": "Differential equations → a system unfolding in time",
+      "hook": "The rule for how something changes can be more useful than a snapshot of its current state.",
+      "future": "Differential equations model vibration, motion, temperature, and feedback. They help engineers predict behavior before building hardware.",
+      "lesson": "A simplified cooling model says dT/dt = −k(T − Troom), with positive k. If T = 50°C, Troom = 20°C, and k = 0.10 per minute, the instantaneous cooling rate is −3°C/min. Later, at 30°C, the rate is only −1°C/min. Cooling slows as the temperature difference shrinks. Do not subtract 3°C every minute indefinitely: the rate itself changes. This is why a differential equation is more than a formula for one answer. It describes how today's state influences what happens next, under stated assumptions.",
+      "question": "With the same room and k, what is the instantaneous rate at T = 40°C?",
+      "answer": "−2°C/min: −0.10 × (40 − 20). The negative sign means temperature is falling.",
+      "activity": "Plot the predicted cooling rate for several temperatures on paper. Ask which assumptions would fail for a spacecraft radiator.",
+      "source": {"label": "OpenStax · Separable equations and cooling", "url": "https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations"}
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear algebra → giving machines a shared geometry",
+      "hook": "A camera, a robot arm, and a workbench can each describe the same point using different coordinates.",
+      "future": "Matrices support coordinate transformations, coupled equation solving, structural analysis, and estimation.",
+      "lesson": "A 90° counterclockwise rotation about the origin maps a point (x, y) to (−y, x). A point at (2 cm, 1 cm) therefore moves to (−1 cm, 2 cm). The matrix form packages this rule as two rows: [0, −1] and [1, 0]. Multiplying those rows by the input coordinates produces the output. The point's distance from the origin remains √5 cm. Robots use richer versions of these transformations to connect joints, tools, and cameras. This small example is a preview; you do not need the entire subject to understand the idea.",
+      "question": "Where does (3 cm, 0 cm) go under that rotation?",
+      "answer": "(0 cm, 3 cm). A point on the positive horizontal axis moves onto the positive vertical axis.",
+      "activity": "Rotate a marked piece of graph paper by a quarter turn. Track three points and check their distances from the origin.",
+      "source": {"label": "MIT OpenCourseWare · Linear algebra", "url": "https://www.ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"}
+    },
+    {
+      "id": "free-body",
+      "title": "Physics → seeing the forces hiding in the mechanism",
+      "hook": "Before calculating what moves, isolate what you are studying and draw what pushes or pulls on it.",
+      "future": "Free-body diagrams help explain load paths, support reactions, acceleration, and why structures or mechanisms behave as they do.",
+      "lesson": "A 2 kg object rests on a horizontal table. Using g ≈ 9.8 m/s², its weight is 19.6 N downward. If no other vertical forces act and it has no vertical acceleration, the table supplies 19.6 N upward. These forces balance, but they are not an action-reaction pair: both act on the object. For a different example, a 2 kg cart with a net horizontal force of 4 N accelerates at 2 m/s². The word net matters: you must combine the relevant forces before using F = ma.",
+      "question": "What net force produces a 3 m/s² acceleration of that 2 kg cart?",
+      "answer": "6 N, in the acceleration's direction. Fnet = ma = 2 kg × 3 m/s².",
+      "activity": "Draw separate diagrams for a book on a table and a gently pulled toy cart. Label only forces acting on your chosen object.",
+      "source": {"label": "OpenStax · Drawing free-body diagrams", "url": "https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams"}
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics → knowing whether it really got better",
+      "hook": "One spectacular test can be luck. Engineering needs a pattern you can defend.",
+      "future": "Repeated measurements reveal variation. Test planning helps distinguish a design change from noise, operator effects, and measurement problems.",
+      "lesson": "Imagine five paper-helicopter descent times: 1.8, 2.0, 2.1, 1.9, and 2.2 s. Their mean is 2.0 s, while their range is 0.4 s. Neither number alone tells the whole story. A revised design that falls for 2.1 s once has not yet shown a dependable improvement. Repeat both designs under similar conditions, record every trial, and examine the spread. Consistent results can also be consistently wrong if a measurement method is biased. The goal is credible evidence, not an impressive single number.",
+      "question": "If a sixth result is 2.0 s, what is the new mean?",
+      "answer": "Still 2.0 s. The original total is 10.0 s; adding 2.0 s gives 12.0 s across six trials.",
+      "activity": "Record five trials before choosing your favorite result. Note release height, operator, and any obvious mistakes rather than silently deleting inconvenient data.",
+      "source": {"label": "NIST · Measurement process characterization", "url": "https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process"}
+    },
+    {
+      "id": "writing-ge",
+      "title": "Writing & general education → getting good work understood",
+      "hook": "A design cannot travel from your head to a team without language, drawings, and an argument people can follow.",
+      "future": "Writing supports design reviews, test reports, instructions, and proposals. History and ethics help you examine whose problems a system solves and who bears its costs.",
+      "lesson": "Compare an imagined test note saying 'the latch was bad' with: 'The latch released in 3 of 5 trials under the same 2 N pull; inspect alignment before changing the spring.' The second statement separates observation from the proposed next step and gives another person something to investigate. A useful short report answers: what did we ask, what did we do, what happened, and what remains uncertain? In a GE essay, practice the same discipline with claims and evidence. A clear paragraph is part of how an engineer makes decisions reviewable.",
+      "question": "What crucial information is missing from 'Design B is 20% better'?",
+      "answer": "Better by which measure, compared with what baseline, under which conditions, across how many tests, and with what tradeoffs? A percentage without context cannot support a sound decision.",
+      "activity": "Write a 150-word report about one small build. Ask someone else to explain your result back to you.",
+      "source": {"label": "MIT Mechanical Engineering · Communication guidelines", "url": "https://meche.mit.edu/node/781"}
+    },
+    {
+      "id": "materials-manufacturing",
+      "title": "Materials & manufacturing → a model becomes an object",
+      "hook": "A perfect shape on a screen still has to be made, measured, assembled, and trusted.",
+      "future": "Manufacturing knowledge connects geometry and material behavior to tolerances, inspection, repeatability, and qualification.",
+      "lesson": "Suppose a pin diameter is specified as 10.00 ± 0.05 mm, while a hole is 10.20 ± 0.05 mm. The tightest allowed combination is a 10.05 mm pin inside a 10.15 mm hole, leaving 0.10 mm diametral clearance. The loosest combination leaves 0.30 mm. That range can change how an assembly feels and moves. Real fit also depends on shape errors, surface condition, temperature, and measurement uncertainty. The lesson is that nominal dimensions alone do not describe the parts you will actually receive.",
+      "question": "If the hole instead permits 10.10 ± 0.05 mm, what is the minimum diametral clearance?",
+      "answer": "0.00 mm: the smallest permitted hole and largest permitted pin are both 10.05 mm. The nominal gap no longer guarantees positive clearance.",
+      "activity": "Measure repeated cardboard tabs and slots with a ruler. Record which fit, then distinguish your intended dimensions from the parts you made.",
+      "source": {"label": "NIST · Additive manufacturing part qualification", "url": "https://www.nist.gov/programs-projects/additive-manufacturing-part-qualification"}
+    }
+  ],
+  "projects": [
+    {
+      "id": "paper-flight-lab",
+      "title": "A tiny flight-test program",
+      "summary": "Turn a paper helicopter into your first repeatable flight experiment. One evening, one variable, one honest conclusion.",
+      "materials": "Paper, blunt scissors, paper clip, ruler, stopwatch, notebook; an adult handles cutting and small parts when building with a child.",
+      "steps": ["Use NASA's paper-helicopter guide to make a baseline design.", "Release it at shoulder height while standing on the floor; record five descent times.", "Change only one feature, such as blade length, and repeat from the same height.", "Compare means and spread. Keep photographs and explain one limitation."],
+      "learn": "Controlled comparisons, dimensions, repeated trials, and evidence. This is a falling autorotating model, not a scaled reproduction of powered Mars flight.",
+      "stretch": "Write a one-page test report with a table and a recommendation for the next experiment.",
+      "source": {"label": "NASA · Make a paper Mars helicopter", "url": "https://www.nasa.gov/stem-content/make-a-paper-mars-helicopter/"}
+    },
+    {
+      "id": "cardboard-arm",
+      "title": "A robot arm you can understand by touch",
+      "summary": "Build a hand-operated two-link cardboard arm and map its reach before adding motors or software.",
+      "materials": "Cardboard strips, paper fasteners, ruler, protractor, graph paper, pencil. Adult supervision for holes and small fasteners.",
+      "steps": ["Cut two measured links and join them with a loose paper-fastener pivot.", "Fix the base link's pivot to a cardboard board and mark a coordinate grid.", "Place the tip at five targets; record approximate joint angles.", "Compare fully stretched and folded positions. Identify unreachable targets."],
+      "learn": "Degrees of freedom, geometry, reach, joint looseness, and the difference between a desired position and a mechanism's constraints. This is an original educational mockup informed by real robotic manipulation work.",
+      "stretch": "After trigonometry, predict tip coordinates for selected configurations and compare with measurements.",
+      "source": {"label": "NASA Johnson Space Center · Robotics", "url": "https://www.nasa.gov/reference/jsc-robotics/"}
+    },
+    {
+      "id": "paper-structures",
+      "title": "Make the same paper carry more",
+      "summary": "Compare a flat paper span, a folded channel, and a corrugated shape using the same amount of material.",
+      "materials": "Paper, two low stacks of books, ruler, a few small coins, notebook. Keep spans low and coin loads small.",
+      "steps": ["Choose one short span and keep the support spacing fixed.", "Make three cross-sectional shapes from equal sheets.", "Add coins gradually at the middle, recording visible bending and the load at which each loses its shape.", "Photograph the outcomes and explain how geometry changed the result."],
+      "learn": "Material quantity is only part of structural performance. Cross-sectional shape and load path matter. This is a comparative tabletop exercise, not a test of flight-qualified structures.",
+      "stretch": "Weigh each version if a kitchen scale is available and compare supported load per gram of paper.",
+      "source": {"label": "NASA · Structures education activity guide", "url": "https://www.nasa.gov/wp-content/uploads/2023/10/636827main-sci-filesguide4-00.pdf"}
+    },
+    {
+      "id": "ocean-on-table",
+      "title": "An ocean engineering lab in a tray",
+      "summary": "Use equal pieces of foil to investigate the tradeoff between carrying weight and remaining stable.",
+      "materials": "Aluminum foil, shallow water tray, identical small weights, towel, ruler. Keep electronics away and supervise children around water and small parts.",
+      "steps": ["Make two differently shaped hulls from equal foil sheets.", "Add equal weights gradually and record the load before water enters.", "Repeat with weights near the center and near one side.", "Describe whether each failure was sinking, tipping, or water entering over an edge."],
+      "learn": "Buoyancy, displacement, stability, and failure classification. A high cargo count under ideal placement does not automatically mean a robust vessel.",
+      "stretch": "Create a simple scorecard that values both centered capacity and tolerance of uneven loading.",
+      "source": {"label": "NOAA · Build a boat", "url": "https://www.noaa.gov/office-education/outreach-communication/hands-on-science-activities/build-a-boat"}
+    },
+    {
+      "id": "micro-factory",
+      "title": "Build a factory for five identical things",
+      "summary": "Make five cardboard brackets, then create a simple locating template to see whether it improves consistency.",
+      "materials": "Cardboard, pencil, ruler, blunt scissors, tape, notebook. No powered tools needed.",
+      "steps": ["Draw a bracket with three labeled dimensions and make five copies by hand.", "Measure the same feature on every copy and record the variation.", "Create a template or stop that helps position the material consistently; make another five.", "Compare dimensions and time, including the time spent making the template."],
+      "learn": "Repeatability, fixtures, process design, and honest accounting of setup effort. This original beginner exercise connects to manufacturing metrology; a better-looking part is not automatically a better-controlled process.",
+      "stretch": "Ask a second person to use your instructions and template. Record where the process still depends on your unspoken knowledge.",
+      "source": {"label": "NIST · Geometrical metrology for manufacturing", "url": "https://www.nist.gov/publications/geometrical-metrology-metal-additive-manufacturing"}
+    },
+    {
+      "id": "serviceable-spacecraft",
+      "title": "Design a spacecraft someone can repair",
+      "summary": "Make a cardboard equipment bay with a removable pretend module. Treat access and replacement as design requirements from the beginning.",
+      "materials": "Small cardboard box, folded paper modules, tape or reusable fasteners, marker, timer; optional ordinary gloves.",
+      "steps": ["Create a box with three labeled modules and a simple access panel.", "Write a short replacement instruction for the middle module.", "Ask someone to remove and replace it using only your instructions. Note blocked access, confusing labels, and dropped pieces.", "Revise the layout and repeat. Compare mistakes as well as elapsed time."],
+      "learn": "Maintainability, interfaces, human factors, and how packaging decisions shape operations. The mockup does not simulate vacuum or orbital dynamics; it isolates an important design question.",
+      "stretch": "Try the task with ordinary gloves and fewer permitted hand positions, then explain what changes you would make for robotic servicing.",
+      "source": {"label": "NASA · Satellite servicing technologies", "url": "https://technology.nasa.gov/satellite-servicing"}
+    }
+  ]
+}

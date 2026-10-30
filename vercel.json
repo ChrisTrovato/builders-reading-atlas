@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "dist",
+  "redirects": [
+    {"source": "/", "destination": "/books/", "permanent": true},
+    {"source": "/books", "destination": "/books/", "permanent": true},
+    {"source": "/books_to_read", "destination": "/books/", "permanent": true}
+  ],
+  "headers": [
+    {"source": "/books/(.*)", "headers": [
+      {"key": "X-Content-Type-Options", "value": "nosniff"},
+      {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
+      {"key": "X-Frame-Options", "value": "SAMEORIGIN"}
+    ]}
+  ]
+}

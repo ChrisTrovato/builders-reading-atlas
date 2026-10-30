@@ -1,0 +1,134 @@
+{
+  "frontiers": [
+    {
+      "id": "orbital-shipyard",
+      "title": "The orbital shipyard",
+      "kicker": "Build something too large to launch whole",
+      "summary": "Picture a workbench that is itself a spacecraft. A robot receives a truss segment, checks its identity, grips it, aligns two interfaces, makes the connection, and proves the joint is sound. The interesting object is the complete workflow: fixtures, tools, inspection, inventory, and a recovery plan when something refuses to seat.",
+      "today": "DEMONSTRATED — The International Space Station established that large orbital structures can be assembled from separately launched components, with astronauts and robotic assistance. This is substantial heritage, but it is not proof that an uncrewed yard can manufacture arbitrary spacecraft. Successful assembly of prepared hardware is different from extracting and processing raw materials.",
+      "next": "RESEARCH — NASA's ISAM work includes robotic assembly of modular structures, including ground demonstrations such as ARMADAS. The next engineering questions concern interfaces, manipulation, inspection, and deciding when to stop rather than force a bad connection. A cancelled project also teaches: NASA discontinued OSAM-1 in 2024, showing that technical ambition must survive cost, schedule, and customer realities.",
+      "horizon": "SPECULATIVE — A service yard could eventually enlarge telescopes, replace damaged modules, and assemble vehicles intended to remain in space. A yard that makes its own sophisticated robots from space resources is a much larger leap; imported electronics, consumables, and replacement tooling would remain important dependencies.",
+      "hardProblem": "A moving arm pushes on its host. Adding a structure changes mass distribution and vibration. A beautiful connection is useless if nobody can establish its strength or electrical continuity. Reliability is a system property, not the arm's brochure specification.",
+      "degreeConnection": "Statics helps you follow loads through a joint. Dynamics explains reaction motion. Controls, materials, manufacturing, and technical writing help turn a clever assembly into a repeatable, inspectable operation.",
+      "firstStep": "Make a cardboard docking interface with two alignment features. Ask another person to assemble it using only your drawing. Record where the instructions and geometry fail, then revise one thing.",
+      "sources": [
+        {
+          "label": "NASA: history of assembly and servicing in space",
+          "url": "https://www.nasa.gov/technology/astronauts-robots-and-the-history-of-fixing-and-building-things-in-space/"
+        },
+        {
+          "label": "NASA: In-Space Servicing, Assembly, and Manufacturing",
+          "url": "https://www.nasa.gov/isam/"
+        },
+        {
+          "label": "NASA: OSAM-1 project and discontinuation notice",
+          "url": "https://www.nasa.gov/missions/update-on-status-of-nasas-osam-1-project/"
+        }
+      ]
+    },
+    {
+      "id": "lunar-construction",
+      "title": "A construction site on the Moon",
+      "kicker": "The future starts with moving dirt",
+      "summary": "Before a settlement becomes a place to live, someone must prepare a place for equipment to work. Think of an excavator clearing a route, a machine checking the ground, and crews connecting power and communications. The frontier is partly civil engineering conducted by machinery that must survive an exceptionally unforgiving job site.",
+      "today": "DEMONSTRATED — NASA's Electrodynamic Dust Shield removed lunar material from test surfaces during Blue Ghost Mission 1 in 2025. That matters because dust can impair equipment, but a successful surface experiment does not mean every bearing, seal, connector, or radiator has become dust-proof. Ground excavator tests establish additional capabilities under selected conditions.",
+      "next": "RESEARCH — NASA's Infrastructure Pilot Excavator uses counter-rotating digging drums to reduce reaction forces. Its testbed work explores excavation, transport, navigation, and hazards. NASA's wider surface-technology program also addresses site preparation and connecting infrastructure. These are development efforts; published excavation targets are design goals, not delivered lunar production records.",
+      "horizon": "SPECULATIVE — Several cooperating machines might prepare landing areas, place shielding, assemble structures, and maintain access routes before a larger crew arrives. Producing usable building material locally could reduce some deliveries. It would not automatically provide pressure vessels, seals, computers, medicines, or a complete habitat.",
+      "hardProblem": "A light machine can struggle to push against soil because it lacks traction and weight. Dust, abrasive particles, changing illumination, terrain uncertainty, and thermal conditions interact. Construction also needs measurement: a surface that looks flat in a camera may not satisfy the requirements of the next machine.",
+      "degreeConnection": "Algebra becomes a mass and energy budget; mechanics becomes traction and actuator sizing. Materials, thermal science, robotics, and systems engineering connect excavation to the larger mission. Your mechanical curiosity belongs directly in that chain.",
+      "firstStep": "On paper, map one bucket of material from untouched ground to a finished berm. List each machine, measurement, and handoff. Circle every assumption that would need an experiment before trusting the plan.",
+      "sources": [
+        {
+          "label": "NASA: Infrastructure Pilot Excavator and testbed",
+          "url": "https://www.nasa.gov/infrastructure-pilot-excavator/"
+        },
+        {
+          "label": "NASA: lunar surface technology priorities",
+          "url": "https://www.nasa.gov/lunar-surface-technology/"
+        },
+        {
+          "label": "NASA: dust shield demonstrated on the Moon, March 2025",
+          "url": "https://www.nasa.gov/image-article/nasas-dust-shield-successfully-repels-lunar-regolith-on-moon/"
+        }
+      ]
+    },
+    {
+      "id": "robotic-factory",
+      "title": "The factory that learns to recover",
+      "kicker": "The next revolution includes the boring parts",
+      "summary": "An impressive factory video shows a robot making the correct move. An impressive factory keeps producing acceptable parts when stock varies, a camera becomes dirty, an operator changes a fixture, and one supplier ships something slightly different. The future is hidden in how the system detects, explains, and recovers from those ordinary disruptions.",
+      "today": "DEMONSTRATED — Industrial robots perform repeatable manufacturing tasks in deliberately engineered environments. NIST emphasizes that successful assembly automation often depends on substantial tooling and fixtures. Those supports are part of the achievement. They also explain why a demonstration cannot simply be copied into every workshop with the same robot arm.",
+      "next": "RESEARCH — NIST's robotic-agility work examines changing tasks and coping with part or environmental variation. Its assembly research develops ways to assess perception, mobility, dexterity, and safety together. Digital twins can support decisions, but NIST stresses verification, validation, and uncertainty: an animated model does not become trustworthy merely by resembling the machine.",
+      "horizon": "SPECULATIVE — Factories could become easier to reconfigure, with robots exchanging tools, inspecting one another, and helping replace worn modules. More automation might lower the cost of expansion. Fully self-reproducing factories remain a different proposition: they would need supply chains for precision components, energy, materials, electronics, and equipment they cannot themselves manufacture.",
+      "hardProblem": "Optimization needs a definition of good output. Fast production of subtly defective parts is failure. You need tolerances, traceable measurements, maintenance time, scrap accounting, and a controlled response to uncertainty. The bottleneck may be inspection or curing rather than the robot's speed.",
+      "degreeConnection": "Statistics helps distinguish noise from a process shift. Mechanics and materials explain fit and damage. Programming, controls, manufacturing, and clear documentation make the cell understandable to the next engineer who must repair it.",
+      "firstStep": "Create a tabletop sorting process using harmless household objects. Introduce one variation at a time. Count errors, write a recovery rule, and compare the revised process with the original instead of judging it by appearance.",
+      "sources": [
+        {
+          "label": "NIST: performance assessment for robotic assembly",
+          "url": "https://www.nist.gov/programs-projects/performance-assessment-framework-robotic-systems"
+        },
+        {
+          "label": "NIST: agility performance of robotic systems",
+          "url": "https://www.nist.gov/programs-projects/agility-performance-robotic-systems"
+        },
+        {
+          "label": "NIST: credibility of manufacturing digital twins",
+          "url": "https://www.nist.gov/publications/credibility-consideration-digital-twins-manufacturing"
+        }
+      ]
+    },
+    {
+      "id": "ocean-observatory",
+      "title": "The observatory beneath the waves",
+      "kicker": "Keep a scientific promise in a hostile environment",
+      "summary": "Imagine a small underwater vehicle leaving its dock to inspect a changing patch of seafloor, then returning with measurements. Its purpose is not just exploration footage. It must deliver data that scientists can compare over time, with enough confidence to tell an environmental change from a failing sensor.",
+      "today": "DEMONSTRATED — Ocean observatories use moorings, cabled instruments, and autonomous platforms to measure processes that satellites cannot see directly. WHOI has documented field tests in which a REMUS vehicle completed a mission, docked, recharged, transferred data, and departed again. Such trials demonstrate a sequence under test conditions, not universal reliability in every sea state or deployment.",
+      "next": "RESEARCH — Resident robotics combines navigation, docking, energy management, communications, and instrument care. A 2025 University of Hawai‘i project examined autonomous docking and charging at Kilo Nalu Observatory. The difficult progression is from a successful visit to repeated useful operation: knowing when observations are trustworthy and when the vehicle needs human attention.",
+      "horizon": "SPECULATIVE — Distributed underwater stations could host vehicles that inspect ecosystems and infrastructure for longer periods with fewer ship visits. Robots might exchange instruments or service selected components. A permanently self-sufficient underwater industrial network would require much more: replacement materials, fabrication, dependable energy, and ways to recover from damage.",
+      "hardProblem": "Pressure, corrosion, fouling, currents, limited energy, and difficult communications all matter. A connector that works once may degrade. A sensor can keep reporting plausible numbers after its calibration has drifted. Scientific usefulness therefore depends on maintenance and measurement discipline as much as mobility.",
+      "degreeConnection": "Fluid mechanics and structures connect naturally with aerospace. Controls, estimation, materials, and thermal design transfer too, while oceanography and marine operations add their own knowledge. This is a real bridge between your interests, not an interchangeable job description.",
+      "firstStep": "Download a small open ocean-data sample. Plot one variable, mark missing readings, and write three explanations for an abrupt change. Ask what extra measurement would distinguish an event from an instrument problem.",
+      "sources": [
+        {
+          "label": "WHOI: observing systems and sensors",
+          "url": "https://www.whoi.edu/what-we-do/understand/departments-centers-labs/aope/aope-research/observing-systems-sensors/"
+        },
+        {
+          "label": "WHOI: REMUS seafloor docking field demonstration",
+          "url": "https://www2.whoi.edu/site/osl/remus-100-projects/seafloor-docking-project/"
+        },
+        {
+          "label": "University of Hawai‘i: resident AUV docking and charging research, 2025",
+          "url": "https://www.soest.hawaii.edu/ore/event/defense_250428/"
+        }
+      ]
+    },
+    {
+      "id": "flight-mechanisms",
+      "title": "The hinge that makes the mission possible",
+      "kicker": "Small moving parts. Enormous consequences.",
+      "summary": "Your fascination with gears, assembly, and how things fit has a direct home in aerospace. A wing surface must move predictably under load. A telescope must unfold after launch. A pointing mechanism must rotate smoothly for years. These are physical, detailed problems whose importance can be much larger than the component on the bench.",
+      "today": "DEMONSTRATED — Webb folded to fit its launch vehicle and then completed a complex deployment sequence in space. NASA's ACTE flight experiment also tested flexible, shape-changing trailing-edge flaps on a research aircraft. These achievements show two different strategies: carefully articulated parts and structures designed to bend in useful ways.",
+      "next": "RESEARCH — Engineers investigate lighter deployable structures, compliant mechanisms, and longer-lived moving interfaces. ESA reported laboratory research in 2026 on reducing lubricant loss through labyrinth-seal geometry, with orbital validation still a future step. The distinction matters: a good model and a vacuum experiment are evidence, but neither alone establishes years of flight performance.",
+      "horizon": "SPECULATIVE — Future vehicles might change shape more extensively, unfold much larger instruments, or accept robotic replacement of worn mechanisms. Those possibilities depend on dependable operation, inspection, and useful advantages over simpler designs. More moving parts can add capability while also creating new ways to fail.",
+      "hardProblem": "The mechanism must survive launch, temperature changes, wear, and manufacturing variation while meeting its motion requirement. Lubricant that leaves a bearing can become contamination elsewhere. In an aircraft, motion also changes aerodynamic forces. The component and its environment must be designed and tested together.",
+      "degreeConnection": "Trigonometry describes linkage geometry; statics and dynamics explain forces and motion. Materials, manufacturing, controls, and experiments turn that understanding into hardware. Technical writing records what passed, what failed, and why the next person should trust the result.",
+      "firstStep": "Build a hand-operated cardboard linkage with paper fasteners. Measure its output position at five input angles. Compare repeated measurements, sketch the geometry, and explain where friction or looseness makes the actual motion differ from the ideal.",
+      "sources": [
+        {
+          "label": "NASA: Webb deployment sequence",
+          "url": "https://science.nasa.gov/mission/webb/deployment/"
+        },
+        {
+          "label": "NASA: Adaptive Compliant Trailing Edge flight research",
+          "url": "https://www.nasa.gov/reference/acte/"
+        },
+        {
+          "label": "ESA: keeping space mechanisms lubricated, May 2026",
+          "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Keeping_Space_Mechanisms_Lubricated"
+        }
+      ]
+    }
+  ]
+}
