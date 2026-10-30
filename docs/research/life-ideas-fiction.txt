@@ -1,0 +1,433 @@
+ATLAS 500 — LIFE, IDEAS, AND FICTION ADDITIONS
+Prepared: 2026-10-30
+Output: work/atlas500-life-ideas-fiction.json
+Scope: 100 distinct additions: n301–n350 (50 nonfiction), f101–f150 (50 fiction).
+Nonfiction allocation: 20 philosophy/civilization; 20 biology/living systems; 10 longevity/healthspan.
+
+METHOD AND LIMITS
+- Original 200-entry books.json was read before selection. Normalized-title comparison found no duplicate original titles; new IDs are unique.
+- Coordinated title ownership with the foundations and engineering agents to avoid overlap.
+- Every source URL below was returned by web research from a publisher, author/estate, or university. No source URL was generated from a guessed book slug.
+- Every source URL was also submitted to a direct web open. 95 returned book-page content with matching title information. Five returned access/timeout errors; those exceptions are identified individually below. Search-index previews still identify the corresponding books. These are not falsely labeled successful fetches.
+- This is bibliographic and curatorial verification, not a claim to have read all 100 complete books or independently validated every scientific assertion within them.
+- Publisher descriptions establish book identity, authorship, subject, and edition context. They are promotional sources, not independent proof of scientific or political claims.
+- Rationale paragraphs, questions, and aerospace/robotics connections are original editorial interpretations. They are not quotations or claims of publisher endorsement.
+- All 100 rationale paragraphs contain 35–60 words (observed range 46–57).
+- Publication years normally identify the original work rather than the currently linked edition. Meditations is null because of ancient composition/publication ambiguity. Fiasco is null because the first translation and original-language publication dates differ. The Machine Stops and Other Stories is the 2024 collection; its caveat separately dates the title story to 1909. Beggars in Spain and Flowers for Algernon identify the expanded novels, not their earlier short versions.
+- Copyrighted passages are not reproduced. Book notes are concise original prose.
+- Fiction is marked fiction and framed as thought experiments, not engineering forecasts. No operational weapon construction or harmful biological instructions are provided.
+- Longevity titles are comparative reading, not an immortality promise or personal medical regimen. Lifespan and Ending Aging explicitly identify speculative/contested claims and limits of human evidence.
+- Thiel and Karp/Zamiska are included alongside Arendt, Scott, Ostrom, Mill, Popper, Jasanoff, Vallor, and Ellul. Their arguments are identified as arguments rather than neutral consensus.
+- No private biographical, financial, family, location, or schooling details are included in public catalog entries.
+
+SOURCE LEDGER
+Status “Book-page content returned” means the web open returned text identifying the work, not that every passage or outbound link was audited.
+
+n301 | Zero to One | Peter Thiel with Blake Masters
+https://www.penguinrandomhouse.com/books/234730/zero-to-one-by-peter-thiel-with-blake-masters/9780804139304/
+Book-page content returned; title/author match the researched work.
+
+n302 | The Technological Republic | Alexander C. Karp and Nicholas W. Zamiska
+https://www.penguinrandomhouse.com/books/760945/the-technological-republic-by-alexander-c-karp-and-nicholas-w-zamiska/9780593798690/
+Book-page content returned; title/author match the researched work.
+
+n303 | The Beginning of Infinity | David Deutsch
+https://www.penguinrandomhouse.com/books/293575/the-beginning-of-infinity-by-david-deutsch/
+Book-page content returned; title/author match the researched work.
+
+n304 | The Human Condition | Hannah Arendt
+https://press.uchicago.edu/ucp/books/book/chicago/H/bo29137972.html
+Book-page content returned; title/author match the researched work.
+
+n305 | The Life of the Mind | Hannah Arendt
+https://www.wallstein-verlag.de/9783835330276-the-life-of-the-mind.html
+Book-page content returned; title/author match the researched work.
+
+n306 | Seeing Like a State | James C. Scott
+https://yalebooks.yale.edu/book/9780300252989/seeing-like-a-state/
+Book-page content returned; title/author match the researched work.
+
+n307 | Two Cheers for Anarchism | James C. Scott
+https://politicalscience.yale.edu/publications/two-cheers-anarchism-six-easy-pieces-autonomy-dignity-and-meaningful-work-and-play
+Book-page content returned; title/author match the researched work.
+
+n308 | The Dawn of Everything | David Graeber and David Wengrow
+https://us.macmillan.com/books/9781250858801/thedawnofeverything/
+Book-page content returned; title/author match the researched work.
+
+n309 | The Evolution of Cooperation | Robert Axelrod
+https://www.hachettebookgroup.com/titles/robert-axelrod/the-evolution-of-cooperation/9781541606944/
+Book-page content returned; title/author match the researched work.
+
+n310 | The Open Society and Its Enemies | Karl Popper
+https://www.routledge.com/The-Open-Society-and-its-Enemies/Gombrich-Havel-Popper/p/book/9780415282369
+Publisher search result verified; direct open returned HTTP 403 (Routledge).
+
+n311 | Conjectures and Refutations | Karl Popper
+https://www.routledge.com/link/link/p/book/9780415285940
+Publisher search result verified; direct open returned HTTP 403 (Routledge).
+
+n312 | The Structure of Scientific Revolutions | Thomas S. Kuhn
+https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+Book-page content returned; title/author match the researched work.
+
+n313 | Justice: What's the Right Thing to Do? | Michael J. Sandel
+https://us.macmillan.com/books/9780374532505/justice/
+Book-page content returned; title/author match the researched work.
+
+n314 | The Ethics of Invention | Sheila Jasanoff
+https://wwnorton.co.uk/books/9780393078992-the-ethics-of-invention
+Book-page content returned; title/author match the researched work.
+
+n315 | Technology and the Virtues | Shannon Vallor
+https://academic.oup.com/book/25951
+Book-page content returned; title/author match the researched work.
+
+n316 | The Technological Society | Jacques Ellul
+https://www.penguinrandomhouse.com/books/46236/the-technological-society-by-jacques-ellul-with-an-introduction-by-robert-k-merton/9780593315682/
+Book-page content returned; title/author match the researched work.
+
+n317 | American Technological Sublime | David E. Nye
+https://mitpress.mit.edu/9780262140560/american-technological-sublime/
+Book-page content returned; title/author match the researched work.
+
+n318 | Meditations | Marcus Aurelius
+https://www.penguinrandomhouse.com/books/6367/meditations-by-marcus-aurelius/
+Book-page content returned; title/author match the researched work.
+
+n319 | On Liberty | John Stuart Mill
+https://www.penguin.co.uk/books/177230/on-liberty-by-john-stuart-mill/9780141046945
+Book-page content returned; title/author match the researched work.
+
+n320 | Governing the Commons | Elinor Ostrom
+https://www.cambridge.org/core/books/governing-the-commons/7AB7AE11BADA84409C34815CC288CD79
+Book-page content returned; title/author match the researched work.
+
+n321 | The Selfish Gene | Richard Dawkins
+https://india.oup.com/product/the-selfish-gene-9780198788607
+Book-page content returned; title/author match the researched work.
+
+n322 | The Extended Phenotype | Richard Dawkins
+https://india.oup.com/product/the-extended-phenotype-9780198788911/
+Book-page content returned; title/author match the researched work.
+
+n323 | On the Origin of Species | Charles Darwin
+https://www.penguinrandomhouse.com/books/306020/on-the-origin-of-species-by-charles-darwin/9780140439120/
+Book-page content returned; title/author match the researched work.
+
+n324 | The Double Helix | James D. Watson
+https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
+Book-page content returned; title/author match the researched work.
+
+n325 | The Gene: An Intimate History | Siddhartha Mukherjee
+https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733500
+Book-page content returned; title/author match the researched work.
+
+n326 | The Song of the Cell | Siddhartha Mukherjee
+https://www.simonandschuster.com/books/The-Song-of-the-Cell/Siddhartha-Mukherjee/9781982117351
+Book-page content returned; title/author match the researched work.
+
+n327 | The Emperor of All Maladies | Siddhartha Mukherjee
+https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781668222010
+Book-page content returned; title/author match the researched work.
+
+n328 | An Immense World | Ed Yong
+https://www.penguinrandomhouse.com/books/616914/an-immense-world-by-ed-yong/
+Book-page content returned; title/author match the researched work.
+
+n329 | Other Minds | Peter Godfrey-Smith
+https://us.macmillan.com/books/9781427291950/otherminds/
+Publisher search result verified; direct open returned HTTP 403 (Macmillan audiobook edition).
+
+n330 | Metazoa | Peter Godfrey-Smith
+https://us.macmillan.com/books/9781250800268/metazoa/
+Book-page content returned; title/author match the researched work.
+
+n331 | I Contain Multitudes | Ed Yong
+https://edyong.me/i-contain-multitudes/
+Book-page content returned; title/author match the researched work.
+
+n332 | Entangled Life | Merlin Sheldrake
+https://www.penguinrandomhouse.com/books/566795/entangled-life-by-merlin-sheldrake/
+Book-page content returned; title/author match the researched work.
+
+n333 | Endless Forms Most Beautiful | Sean B. Carroll
+https://www.seanbcarroll.com/endless-forms-most-beautiful
+Book-page content returned; title/author match the researched work.
+
+n334 | Wonderful Life | Stephen Jay Gould
+https://wwnorton.co.uk/books/9780393027051-wonderful-life
+Book-page content returned; title/author match the researched work.
+
+n335 | Your Inner Fish | Neil Shubin
+https://www.penguinrandomhouse.com/books/166494/your-inner-fish-by-neil-shubin/
+Book-page content returned; title/author match the researched work.
+
+n336 | Life Ascending | Nick Lane
+https://profilebooks.com/work/life-ascending/
+Book-page content returned; title/author match the researched work.
+
+n337 | The Vital Question | Nick Lane
+https://nick-lane.net/books/the-vital-question-why-is-life-the-way-it-is/
+Book-page content returned; title/author match the researched work.
+
+n338 | Behave | Robert M. Sapolsky
+https://www.penguinrandomhouse.com/books/311787/behave-by-robert-m-sapolsky/9780735222786/
+Book-page content returned; title/author match the researched work.
+
+n339 | Being You | Anil Seth
+https://www.anilseth.com/being-you/
+Book-page content returned; title/author match the researched work.
+
+n340 | Life on the Edge | Johnjoe McFadden and Jim Al-Khalili
+https://www.penguinrandomhouse.com/books/218206/life-on-the-edge-by-johnjoe-mcfadden-and-jim-al-khalili/
+Book-page content returned; title/author match the researched work.
+
+n341 | Why We Die | Venki Ramakrishnan
+https://hachetteindia.com/Home/bookdetails/Info/9781529369281/why-we-die
+Book-page content returned; title/author match the researched work.
+
+n342 | Ageless | Andrew Steele
+https://www.bloomsbury.com/uk/ageless-9781526620927/
+Book-page content returned; title/author match the researched work.
+
+n343 | Lifespan | David A. Sinclair with Matthew D. LaPlante
+https://www.simonandschuster.com/books/Lifespan/David-Sinclair/9781501191978
+Book-page content returned; title/author match the researched work.
+
+n344 | Outlive | Peter Attia with Bill Gifford
+https://www.penguinrandomhouse.com/books/705161/outlive-by-peter-attia-md-with-bill-gifford/
+Book-page content returned; title/author match the researched work.
+
+n345 | Being Mortal | Atul Gawande
+https://us.macmillan.com/books/9781250076229/beingmortal/
+Book-page content returned; title/author match the researched work.
+
+n346 | Ending Aging | Aubrey de Grey with Michael Rae
+https://us.macmillan.com/books/9781429931830/endingaging/
+Book-page content returned; title/author match the researched work.
+
+n347 | Immortality | Stephen Cave
+https://www.penguinrandomhouse.com/books/208014/immortality-by-stephen-cave/9780307884916/
+Book-page content returned; title/author match the researched work.
+
+n348 | The 100-Year Life | Lynda Gratton and Andrew J. Scott
+https://www.bloomsbury.com/uk/100year-life-9781526622839/
+Publisher search result verified; direct open timed out on both checks (Bloomsbury).
+
+n349 | The Longevity Imperative | Andrew J. Scott
+https://www.hachettebookgroup.com/titles/andrew-j-scott/the-longevity-imperative/9781541604506/
+Book-page content returned; title/author match the researched work.
+
+n350 | Spring Chicken | Bill Gifford
+https://www.hachettebookgroup.com/titles/bill-gifford/spring-chicken/9781455527434/
+Book-page content returned; title/author match the researched work.
+
+f101 | Daemon | Daniel Suarez
+https://www.penguinrandomhouse.com/books/304687/daemon-by-daniel-suarez/9781524741891/
+Book-page content returned; title/author match the researched work.
+
+f102 | Freedom (TM) | Daniel Suarez
+https://www.penguinrandomhouse.com/books/304688/freedom-tm-by-daniel-suarez/
+Book-page content returned; title/author match the researched work.
+
+f103 | Influx | Daniel Suarez
+https://www.penguinrandomhouse.com/books/308807/influx-by-daniel-suarez/
+Book-page content returned; title/author match the researched work.
+
+f104 | Frankenstein | Mary Shelley
+https://www.penguinrandomhouse.com/books/311916/frankenstein-by-mary-shelley/
+Book-page content returned; title/author match the researched work.
+
+f105 | R.U.R. (Rossum's Universal Robots) | Karel Čapek
+https://www.penguinrandomhouse.com/books/286379/rur-rossums-universal-robots-by-karel-capek-translated-by-claudia-novack-introduction-by-ivan-klima/
+Book-page content returned; title/author match the researched work.
+
+f106 | The Time Machine | H. G. Wells
+https://www.penguin.co.uk/books/183800/the-time-machine-by-wells-h-g/9780241746721
+Book-page content returned; title/author match the researched work.
+
+f107 | The Machine Stops and Other Stories | E. M. Forster
+https://www.penguin.co.uk/books/461923/the-machine-stops-and-other-stories-by-forster-e-m/9780241652572
+Book-page content returned; title/author match the researched work.
+
+f108 | Brave New World | Aldous Huxley
+https://www.penguin.co.uk/books/357838/brave-new-world-by-huxley-aldous/9780099518471
+Book-page content returned; title/author match the researched work.
+
+f109 | Nineteen Eighty-Four | George Orwell
+https://www.penguin.co.uk/books/186361/nineteen-eighty-four-by-orwell-george/9780718193645
+Book-page content returned; title/author match the researched work.
+
+f110 | Never Let Me Go | Kazuo Ishiguro
+https://www.penguinrandomhouse.com/books/85609/never-let-me-go-by-kazuo-ishiguro-with-a-new-introduction/9781400078776/
+Book-page content returned; title/author match the researched work.
+
+f111 | Klara and the Sun | Kazuo Ishiguro
+https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-a-gma-book-club-pick-by-kazuo-ishiguro/9780593318188/
+Book-page content returned; title/author match the researched work.
+
+f112 | Do Androids Dream of Electric Sheep? | Philip K. Dick
+https://www.penguinrandomhouse.com/books/40617/do-androids-dream-of-electric-sheep-by-philip-k-dick/
+Book-page content returned; title/author match the researched work.
+
+f113 | Ubik | Philip K. Dick
+https://www.orionbooks.co.uk/titles/philip-k-dick/ubik/9781857988536/
+Book-page content returned; title/author match the researched work.
+
+f114 | Flowers for Algernon | Daniel Keyes
+https://www.hachette.co.uk/titles/daniel-keyes/flowers-for-algernon/9781399607766/
+Book-page content returned; title/author match the researched work.
+
+f115 | Oryx and Crake | Margaret Atwood
+https://www.penguinrandomhouse.com/books/6113/oryx-and-crake-by-margaret-atwood/
+Book-page content returned; title/author match the researched work.
+
+f116 | The Windup Girl | Paolo Bacigalupi
+https://www.skyhorsepublishing.com/9781597801577/the-windup-girl/
+Book-page content returned; title/author match the researched work.
+
+f117 | The Water Knife | Paolo Bacigalupi
+https://www.penguinrandomhouse.com/books/237233/the-water-knife-by-paolo-bacigalupi/
+Book-page content returned; title/author match the researched work.
+
+f118 | Blood Music | Greg Bear
+https://openroadmedia.com/ebook/blood-music/9781497607446
+Book-page content returned; title/author match the researched work.
+
+f119 | Darwin's Radio | Greg Bear
+https://www.penguinrandomhouse.com/books/10220/darwins-radio-by-greg-bear/9780345435248/
+Book-page content returned; title/author match the researched work.
+
+f120 | Beggars in Spain | Nancy Kress
+https://nancykress.com/beggars-in-spain/
+Book-page content returned; title/author match the researched work.
+
+f121 | The First Fifteen Lives of Harry August | Claire North
+https://www.hachettebookgroup.com/titles/claire-north/the-first-fifteen-lives-of-harry-august/9780316399630/
+Book-page content returned; title/author match the researched work.
+
+f122 | The Postmortal | Drew Magary
+https://www.penguinrandomhouse.com/books/309190/the-postmortal-by-drew-magary/
+Book-page content returned; title/author match the researched work.
+
+f123 | The Echo Wife | Sarah Gailey
+https://us.macmillan.com/books/9781250174659/theechowife/
+Book-page content returned; title/author match the researched work.
+
+f124 | Autonomous | Annalee Newitz
+https://us.macmillan.com/books/9780765392091/autonomous/
+Book-page content returned; title/author match the researched work.
+
+f125 | Walkaway | Cory Doctorow
+https://us.macmillan.com/books/9780765392787/walkaway/
+Book-page content returned; title/author match the researched work.
+
+f126 | Makers | Cory Doctorow
+https://us.macmillan.com/books/9781429969284/makers/
+Book-page content returned; title/author match the researched work.
+
+f127 | Accelerando | Charles Stross
+https://www.penguinrandomhouse.com/books/294259/accelerando-by-charles-stross/
+Book-page content returned; title/author match the researched work.
+
+f128 | Glasshouse | Charles Stross
+https://www.penguinrandomhouse.com/books/294267/glasshouse-by-charles-stross/
+Book-page content returned; title/author match the researched work.
+
+f129 | The Cyberiad | Stanisław Lem
+https://www.penguin.co.uk/books/256135/the-cyberiad-by-lem-stanislaw/9780141394596
+Book-page content returned; title/author match the researched work.
+
+f130 | Fiasco | Stanisław Lem
+https://english.lem.pl/works/novels/fiasco
+Book-page content returned; title/author match the researched work.
+
+f131 | The Dervish House | Ian McDonald
+https://www.hachette.co.uk/titles/ian-mcdonald/the-dervish-house/9780575088627/
+Book-page content returned; title/author match the researched work.
+
+f132 | Luna: New Moon | Ian McDonald
+https://us.macmillan.com/books/9781466847637/lunanewmoon/
+Book-page content returned; title/author match the researched work.
+
+f133 | The Quiet War | Paul McAuley
+https://www.orionbooks.co.uk/titles/paul-mcauley/the-quiet-war/9780575083554/
+Book-page content returned; title/author match the researched work.
+
+f134 | The Last Astronaut | David Wellington
+https://www.hachettebookgroup.com/titles/david-wellington/the-last-astronaut/9781549175695/
+Book-page content returned; title/author match the researched work.
+
+f135 | The Apollo Murders | Chris Hadfield
+https://www.hachette.co.uk/titles/chris-hadfield/the-apollo-murders/9781529406832/
+Book-page content returned; title/author match the researched work.
+
+f136 | The Moon Is a Harsh Mistress | Robert A. Heinlein
+https://www.penguinrandomhouse.com/books/589269/the-moon-is-a-harsh-mistress-by-robert-a-heinlein/9780440001355/
+Book-page content returned; title/author match the researched work.
+
+f137 | The Moon and the Other | John Kessel
+https://www.simonandschuster.com/books/The-Moon-and-the-Other/John-Kessel/9781481481458
+Book-page content returned; title/author match the researched work.
+
+f138 | The Light of Other Days | Arthur C. Clarke and Stephen Baxter
+https://us.macmillan.com/books/9781429959629/thelightofotherdays/
+Book-page content returned; title/author match the researched work.
+
+f139 | The Time Ships | Stephen Baxter
+https://harpervoyagerbooks.co.uk/products/the-time-ships-stephen-baxter-9780008134549/
+Book-page content returned; title/author match the researched work.
+
+f140 | Proxima | Stephen Baxter
+https://www.penguinrandomhouse.com/books/315408/proxima-by-stephen-baxter/
+Book-page content returned; title/author match the researched work.
+
+f141 | Eon | Greg Bear
+https://www.hachette.co.uk/titles/greg-bear/eon/9780575073166/
+Book-page content returned; title/author match the researched work.
+
+f142 | The Mote in God's Eye | Larry Niven and Jerry Pournelle
+https://www.simonandschuster.com/books/The-Mote-in-Gods-Eye/Larry-Niven/9780671741921
+Book-page content returned; title/author match the researched work.
+
+f143 | Ringworld | Larry Niven
+https://www.penguinrandomhouse.com/books/122174/ringworld-by-larry-niven/
+Book-page content returned; title/author match the researched work.
+
+f144 | The Swarm | Frank Schätzing
+https://www.kiwi-verlag.de/verlag/rights/book/frank-schaetzing-der-schwarm-9783462033748
+Book-page content returned; title/author match the researched work.
+
+f145 | The Employees | Olga Ravn
+https://www.ndbooks.com/book/the-employees/
+Book-page content returned; title/author match the researched work.
+
+f146 | A Half-Built Garden | Ruthanna Emrys
+https://us.macmillan.com/books/9781250210975/ahalfbuiltgarden/
+Book-page content returned; title/author match the researched work.
+
+f147 | Semiosis | Sue Burke
+https://us.macmillan.com/books/9780765391360/semiosis/
+Book-page content returned; title/author match the researched work.
+
+f148 | The Terraformers | Annalee Newitz
+https://us.macmillan.com/books/9781250228062/theterraformers/
+Book-page content returned; title/author match the researched work.
+
+f149 | How High We Go in the Dark | Sequoia Nagamatsu
+https://www.bloomsbury.com/uk/how-high-we-go-in-the-dark-9781526637208/
+Publisher search result verified; direct open returned HTTP 403 (Bloomsbury).
+
+f150 | The Membranes | Chi Ta-wei
+https://cup.columbia.edu/book/the-membranes/9780231195706/
+Book-page content returned; title/author match the researched work.
+
+VALIDATION
+JSON parsed successfully in PowerShell.
+100 entries; 50 nonfiction, 50 fiction.
+No normalized-title overlaps with the original 200.
+No repeated new IDs.
+No missing title, author, rationale, or source URL.
+All required schema fields retained: id, title, author, year, kind, category, stage, difficulty, why, question, caveat, source, tags.
+

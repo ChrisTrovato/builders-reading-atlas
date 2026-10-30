@@ -1,0 +1,334 @@
+FOUNDATIONS CATALOG — SOURCE AND EDITORIAL NOTES
+Prepared 2026-10-30 for the public Builder's Reading Atlas expansion.
+
+Scope and validation
+- Exactly 100 nonfiction recommendations: n101–n200.
+- 45 Math & learning; 30 Physics & astronomy; 15 Chemistry & materials; 10 Science & discovery.
+- JSON schema, sequential unique IDs, difficulty range, HTTPS source URLs, unique normalized titles, and no duplicate titles against the pre-existing catalog were checked with Python.
+- Bibliographic titles and author identities were checked against publisher, author/estate, university, OpenStax, or publisher-hosted JSTOR records using web search and targeted page reads. This is a curated recommendation catalog, not a claim that all 100 works were read cover to cover in this session.
+- Each why/question/caveat is original editorial writing. Aerospace/mechanical/space-living applications are editorial connections, not statements attributed to the publishers.
+- Twenty original publication years are included where the research explicitly supported them. Eighty years remain null rather than mix guessed dates, original dates, revised editions, translations, and paperback publication dates.
+
+Source coverage and limitations
+- Sources are primarily individual book pages. A small number use official author bibliographies or book indexes: Strang, Strogatz's Sync, Downey's Think Stats/Think Bayes, Feynman's books, Greene, and Miodownik. These indexes explicitly identify the relevant books.
+- How to Study for a Mathematics Degree uses Oxford University Press's author discussion, identifying Lara Alcock and the 2012 UK title. The US title How to Study as a Mathematics Major is the same work and is not counted separately.
+- Visual Differential Geometry and Forms uses its complete Princeton University Press record on JSTOR. It was directly opened and title, author, publisher, and 2021 copyright were confirmed.
+- OpenStax detail pages returned valid book titles but little machine-readable text. Prefaces were read for deeper confirmation, including corrected contributor lists for Elementary Algebra 2e (three authors) and Intermediate Algebra 2e (Marecek and Mathis).
+- Miodownik's author book page was available in indexed primary-source results; a direct read returned a transient 502. Liquid Rules is the US title of Liquid, not a second counted book.
+- Catalog/search snippets and accessible primary pages establish bibliographic identity, not exhaustive fact checking of everything within each book. Links can change. No prices, current inventory, or claim of every edition being available were added.
+- No summaries are copied from publisher blurbs. Recommended applications, difficulty levels, stages, and caveats are editorial judgments.
+- Prealgebra/elementary/intermediate algebra are staged alternatives for closing gaps, not a claim everyone must read all three. Calculus 2/3 and University Physics 2/3 are distinct curricular volumes.
+- The Periodic Table is classified as nonfiction memoir with an explicit caveat that it contains fictionalized stories.
+- The full Feynman Lectures counts as one work. Six Easy Pieces and Six Not So Easy Pieces were deliberately not added as further entries because they excerpt that work.
+- No editions of one title were counted as separate recommendations.
+- The existing site already contains core College Algebra, Precalculus, Calculus Volume 1, University Physics Volume 1, Infinite Powers, What Is Mathematics?, How to Solve It, A Mind for Numbers, The Art of Doing Science and Engineering, Strong Materials, and Structures; these are not repeated.
+
+Practical starter suggestions from this addition
+- n107 The Joy of x: motivation during foundational mathematics.
+- n137 Street-Fighting Mathematics: estimation and dimensional reasoning after some calculus.
+- n174 Storm in a Teacup: very accessible physical intuition.
+- n180 Stuff Matters: tangible materials thinking.
+- n196 The Visual Display of Quantitative Information: communicate project evidence clearly.
+- These are choices, not an instruction to buy a large stack of books.
+
+SOURCE REGISTER
+n101 | Prealgebra 2e | Lynn Marecek, MaryAnne Anthony-Smith & Andrea Honeycutt Mathis
+OpenStax free textbook: https://openstax.org/details/books/prealgebra-2e
+
+n102 | Elementary Algebra 2e | Lynn Marecek, MaryAnne Anthony-Smith & Andrea Honeycutt Mathis
+OpenStax free textbook: https://openstax.org/details/books/elementary-algebra-2e
+
+n103 | Intermediate Algebra 2e | Lynn Marecek & Andrea Honeycutt Mathis
+OpenStax free textbook: https://openstax.org/details/books/intermediate-algebra-2e
+
+n104 | Calculus Made Easy | Silvanus P. Thompson; revised by Martin Gardner
+Publisher book page: https://us.macmillan.com/books/9780312185480/calculusmadeeasy/
+
+n105 | Calculus Volume 2 | Gilbert Strang & Edwin Herman
+OpenStax free textbook: https://openstax.org/details/books/calculus-volume-2
+
+n106 | Calculus Volume 3 | Gilbert Strang & Edwin Herman
+OpenStax free textbook: https://openstax.org/details/books/calculus-volume-3
+
+n107 | The Joy of x | Steven Strogatz
+Author’s book page: https://www.stevenstrogatz.com/books/the-joy-of-x
+
+n108 | The Calculus of Friendship | Steven Strogatz
+Author’s book page: https://www.stevenstrogatz.com/books/the-calculus-of-friendship-what-a-teacher-and-a-student-learned-about-life-while-corresponding-about-math
+
+n109 | Sync | Steven Strogatz
+Author’s book page: https://www.stevenstrogatz.com/books
+
+n110 | Nonlinear Dynamics and Chaos | Steven H. Strogatz
+Author’s book page: https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering
+
+n111 | Introduction to Linear Algebra | Gilbert Strang
+Publisher book page: https://www.cambridge.org/highereducation/books/introduction-to-linear-algebra/16E6F95D170A449FE1E4B96ECA977256
+
+n112 | Linear Algebra Done Right | Sheldon Axler
+Author’s book resource: https://linear.axler.net/
+
+n113 | Linear Algebra and Learning from Data | Gilbert Strang
+Author’s university book resource: https://math.mit.edu/~gs/books/books.html
+
+n114 | Differential Equations and Linear Algebra | Gilbert Strang
+Publisher book page: https://wellesleycambridge.com/books/differential-equations-and-linear-algebra
+
+n115 | Mathematical Methods in the Physical Sciences | Mary L. Boas
+Publisher book page: https://www.wiley.com/en-us/shop/general-physics/mathematical-methods-in-the-physical-sciences-3rd-edition-p-9780471198260
+
+n116 | Mathematical Methods for Physics and Engineering | K. F. Riley, M. P. Hobson & S. J. Bence
+Publisher book page: https://www.cambridge.org/core/books/mathematical-methods-for-physics-and-engineering/911A43AE1CF224743D32707FCC4AE0EB
+
+n117 | Advanced Engineering Mathematics | Erwin Kreyszig
+Publisher book page: https://www.wiley.com/en-us/advanced-engineering-mathematics-10th-edition-p-9781119664826
+
+n118 | Visual Complex Analysis | Tristan Needham
+Publisher book page: https://academic.oup.com/book/52945
+
+n119 | Visual Differential Geometry and Forms | Tristan Needham
+Princeton University Press book on JSTOR: https://www.jstor.org/stable/j.ctv1cmsmx5
+
+n120 | Introduction to Probability | Joseph K. Blitzstein & Jessica Hwang
+Publisher book page: https://www.routledge.com/Introduction-to-Probability-Second-Edition/Blitzstein-Hwang/p/book/9781138369917/
+
+n121 | All of Statistics | Larry Wasserman
+Publisher book page: https://link.springer.com/book/10.1007/978-0-387-21736-9
+
+n122 | Think Stats | Allen B. Downey
+Author’s book resource: https://allendowney.github.io/
+
+n123 | Think Bayes | Allen B. Downey
+Author’s book resource: https://allendowney.github.io/
+
+n124 | Naked Statistics | Charles Wheelan
+Publisher book page: https://wwnorton.co.uk/books/9780393347777-naked-statistics
+
+n125 | How Not to Be Wrong | Jordan Ellenberg
+Publisher book page: https://www.penguinrandomhouse.com/books/312349/how-not-to-be-wrong-by-jordan-ellenberg/
+
+n126 | Shape | Jordan Ellenberg
+Publisher book page: https://www.penguinrandomhouse.com/books/612131/shape-by-jordan-ellenberg/
+
+n127 | The Art of Statistics | David Spiegelhalter
+Publisher book page: https://www.hachettebookgroup.com/titles/david-spiegelhalter/the-art-of-statistics-3/9781541675704/
+
+n128 | The Art of Uncertainty | David Spiegelhalter
+Publisher book page: https://www.penguin.co.uk/books/458199/the-art-of-uncertainty-by-spiegelhalter-david/9780241658628
+
+n129 | The Drunkard’s Walk | Leonard Mlodinow
+Publisher book page: https://www.penguinrandomhouse.com/books/115699/the-drunkards-walk-by-leonard-mlodinow/
+
+n130 | Innumeracy | John Allen Paulos
+Publisher book page: https://academic.macmillan.com/academictrade/9780809058402/innumeracy/
+
+n131 | Mathematics for Human Flourishing | Francis Su
+Publisher book page: https://yalebooks.yale.edu/book/9780300248814/mathematics-for-human-flourishing/
+
+n132 | Love and Math | Edward Frenkel
+Author’s book page: https://www.edwardfrenkel.com/lovemath/
+
+n133 | Proofs and Refutations | Imre Lakatos
+Publisher book page: https://www.cambridge.org/core/books/proofs-and-refutations/A11138AE31DB52797A6E4C3F1856E1CB
+
+n134 | Book of Proof | Richard Hammack
+Author’s book resource: https://richardhammack.github.io/BookOfProof/
+
+n135 | How to Prove It | Daniel J. Velleman
+Publisher book page: https://www.cambridge.org/highereducation/books/how-to-prove-it/6D2965D625C6836CD4A785A2C843B3DA
+
+n136 | The Art of Problem Solving, Volume 1: The Basics | Sandor Lehoczky & Richard Rusczyk
+Publisher book page: https://artofproblemsolving.com/store/book/aops-vol1
+
+n137 | Street-Fighting Mathematics | Sanjoy Mahajan
+Publisher book page: https://mitpress.mit.edu/9780262514293/street-fighting-mathematics/
+
+n138 | The Princeton Companion to Applied Mathematics | Nicholas J. Higham, editor
+Author’s book page: https://nhigham.com/the-princeton-companion-to-applied-mathematics/
+
+n139 | Numerical Recipes | William H. Press, Saul A. Teukolsky, William T. Vetterling & Brian P. Flannery
+Author’s book resource: https://numerical.recipes/
+
+n140 | Numerical Linear Algebra | Lloyd N. Trefethen & David Bau III
+Author’s university book resource: https://people.maths.ox.ac.uk/trefethen/text.html
+
+n141 | How to Think Like a Mathematician | Kevin Houston
+Publisher book page: https://www.cambridge.org/core/books/how-to-think-like-a-mathematician/FB0813C3AEDDECD40BE58AF186370D52
+
+n142 | How to Study for a Mathematics Degree | Lara Alcock
+Oxford University Press author discussion: https://blog.oup.com/2013/01/how-to-study-undergraduate-mathematics/
+
+n143 | Understanding Analysis | Stephen Abbott
+Publisher book page: https://link.springer.com/book/10.1007/978-1-4939-2712-8
+
+n144 | Math Adventures with Python | Peter Farrell
+Publisher book page: https://nostarch.com/mathadventures/
+
+n145 | Introduction to Applied Linear Algebra | Stephen Boyd & Lieven Vandenberghe
+Author’s university book resource: https://www.web.stanford.edu/~boyd/vmls/
+
+n146 | University Physics Volume 2 | Samuel J. Ling, Jeff Sanny & William Moebs
+OpenStax free textbook: https://openstax.org/details/books/university-physics-volume-2
+
+n147 | University Physics Volume 3 | Samuel J. Ling, Jeff Sanny & William Moebs
+OpenStax free textbook: https://openstax.org/details/books/university-physics-volume-3
+
+n148 | Astronomy 2e | Andrew Fraknoi, David Morrison & Sidney C. Wolff
+OpenStax free textbook: https://openstax.org/details/books/astronomy-2e
+
+n149 | The Feynman Lectures on Physics | Richard P. Feynman, Robert B. Leighton & Matthew Sands
+Caltech online edition: https://www.feynmanlectures.caltech.edu/
+
+n150 | QED: The Strange Theory of Light and Matter | Richard P. Feynman
+Author’s book page: https://www.richardfeynman.com/works/textbooks.html
+
+n151 | The Character of Physical Law | Richard P. Feynman
+Author’s book page: https://www.richardfeynman.com/works/textbooks.html
+
+n152 | The Theoretical Minimum | Leonard Susskind & George Hrabovsky
+Publisher book page: https://www.hbgacademic.com/titles/leonard-susskind/the-theoretical-minimum/9780465075683/
+
+n153 | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind & Art Friedman
+Publisher book page: https://www.hbgacademic.com/titles/leonard-susskind/quantum-mechanics/9780465062904/
+
+n154 | Special Relativity and Classical Field Theory | Leonard Susskind & Art Friedman
+Publisher book page: https://www.hachettebookgroup.com/titles/leonard-susskind/special-relativity-and-classical-field-theory/9781541674066/
+
+n155 | General Relativity: The Theoretical Minimum | Leonard Susskind & André Cabannes
+Publisher book page: https://www.hbgacademic.com/titles/leonard-susskind/general-relativity/9781541601789/
+
+n156 | Something Deeply Hidden | Sean Carroll
+Author’s book page: https://preposterousuniverse.com/somethingdeeplyhidden/
+
+n157 | Spacetime and Geometry | Sean M. Carroll
+Author’s book page: https://preposterousuniverse.com/spacetimeandgeometry/
+
+n158 | From Eternity to Here | Sean Carroll
+Author’s book page: https://preposterousuniverse.com/eternitytohere/
+
+n159 | The Fabric of the Cosmos | Brian Greene
+Author’s book page: https://www.briangreene.org/books-and-writings/
+
+n160 | The Elegant Universe | Brian Greene
+Author’s book page: https://www.briangreene.org/books-and-writings/
+
+n161 | A Brief History of Time | Stephen Hawking
+Publisher book page: https://www.penguinrandomhouse.com/books/77010/a-brief-history-of-time-by-stephen-hawking/
+
+n162 | Black Holes and Time Warps | Kip S. Thorne
+Publisher book page: https://wwnorton.co.uk/books/9780393312768-black-holes-time-warps
+
+n163 | Cosmos | Carl Sagan
+Publisher book page: https://www.penguinrandomhouse.com/books/159730/cosmos-by-carl-sagan/
+
+n164 | Pale Blue Dot | Carl Sagan
+Publisher book page: https://www.penguinrandomhouse.com/books/159735/pale-blue-dot-by-carl-sagan/
+
+n165 | The End of Everything (Astrophysically Speaking) | Katie Mack
+Publisher book page: https://www.simonandschuster.com/books/The-End-of-Everything/Katie-Mack/9781982103545
+
+n166 | The Order of Time | Carlo Rovelli
+Publisher book page: https://www.penguinrandomhouse.com/books/551483/the-order-of-time-by-carlo-rovelli/9780735216129
+
+n167 | Welcome to the Universe | Neil deGrasse Tyson, Michael A. Strauss & J. Richard Gott
+Author’s book page: https://neildegrassetyson.com/books/2016-09-welcome-to-the-universe/
+
+n168 | An Introduction to Modern Astrophysics | Bradley W. Carroll & Dale A. Ostlie
+Publisher book page: https://www.cambridge.org/highereducation/books/an-introduction-to-modern-astrophysics/140DDF8A480C3841DCCD76D66984D858
+
+n169 | An Introduction to Thermal Physics | Daniel V. Schroeder
+Publisher book page: https://academic.oup.com/book/41238
+
+n170 | An Introduction to Mechanics | Daniel Kleppner & Robert Kolenkow
+Publisher book page: https://www.cambridge.org/core/books/an-introduction-to-mechanics/5014FDB906B127C08616DA14C9EDA1E2
+
+n171 | Electricity and Magnetism | Edward M. Purcell & David J. Morin
+Publisher book page: https://www.cambridge.org/highereducation/books/electricity-and-magnetism/0F97BB6C5D3A56F19B9835EDBEAB087C
+
+n172 | Introduction to Electrodynamics | David J. Griffiths
+Publisher book page: https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/FD23E188E2BDCDB40199CFE3386EC08F
+
+n173 | Vibrations and Waves | A. P. French
+Publisher book page: https://www.routledge.com/Vibrations-and-Waves/French/p/book/9781315273372
+
+n174 | Storm in a Teacup | Helen Czerski
+Author’s book page: https://www.helenczerski.net/books-writing
+
+n175 | Physics for Future Presidents | Richard A. Muller
+Publisher book page: https://wwnorton.co.uk/books/9780393337112-physics-for-future-presidents-6e937213-f615-4756-af21-d1239d3ea6bc
+
+n176 | Chemistry 2e | Paul Flowers, Klaus Theopold, Richard Langley & William R. Robinson
+OpenStax free textbook: https://openstax.org/details/books/chemistry-2e
+
+n177 | Organic Chemistry | John McMurry
+OpenStax free textbook: https://openstax.org/details/books/organic-chemistry
+
+n178 | The Periodic Table | Primo Levi
+Publisher book page: https://www.penguinrandomhouse.com/books/100657/the-periodic-table-by-primo-levi-introduction-by-rivka-galchen/9780805210415/
+
+n179 | The Disappearing Spoon | Sam Kean
+Publisher book page: https://www.hachettebookgroup.com/titles/sam-kean/the-disappearing-spoon/9780316051637/
+
+n180 | Stuff Matters | Mark Miodownik
+Author’s book page: https://www.markmiodownik.net/?page_id=645
+
+n181 | Liquid Rules | Mark Miodownik
+Author’s book page: https://www.markmiodownik.net/?page_id=645
+
+n182 | Materials Science and Engineering: An Introduction | William D. Callister Jr. & David G. Rethwisch
+Publisher book page: https://www.wiley.com/en-us/materials-science-and-engineering-an-introduction-10th-edition-p-9781119405498R150
+
+n183 | Atkins’ Physical Chemistry | Peter Atkins, Julio de Paula & James Keeler
+Publisher book page: https://www.oup.com.au/books/higher-education/chemistry/9780198847816
+
+n184 | Molecules | Theodore Gray; photographs by Nick Mann
+Publisher book page: https://www.hbgacademic.com/titles/theodore-gray/molecules/9780316392839/
+
+n185 | The Elements | Theodore Gray; photographs by Nick Mann
+Publisher book page: https://shop.hachettebookgroup.com/products/elements-1
+
+n186 | Periodic Tales | Hugh Aldersey-Williams
+Author’s book page: https://www.hughalderseywilliams.com/books-periodic
+
+n187 | The Same and Not the Same | Roald Hoffmann
+Publisher book page: https://cup.columbia.edu/book/the-same-and-not-the-same/9780231101394/
+
+n188 | Napoleon’s Buttons | Penny Le Couteur & Jay Burreson
+Publisher book page: https://www.penguinrandomhouse.com/books/288699/napoleons-buttons-by-penny-le-couteur/
+
+n189 | Superheavy | Kit Chapman
+Publisher book page: https://www.bloomsbury.com/us/superheavy-9781472953919/
+
+n190 | Materials: A Very Short Introduction | Christopher Hall
+Publisher book page: https://academic.oup.com/book/613
+
+n191 | The Demon-Haunted World | Carl Sagan
+Publisher book page: https://www.penguinrandomhouse.com/books/159731/the-demon-haunted-world-by-carl-sagan/
+
+n192 | Surely You’re Joking, Mr. Feynman! | Richard P. Feynman; edited by Ralph Leighton
+Author’s book page: https://www.richardfeynman.com/works/popular.html
+
+n193 | What Do You Care What Other People Think? | Richard P. Feynman; edited by Ralph Leighton
+Author’s book page: https://www.richardfeynman.com/works/popular.html
+
+n194 | The Pleasure of Finding Things Out | Richard P. Feynman; edited by Jeffrey Robbins
+Author’s book page: https://www.richardfeynman.com/works/popular.html
+
+n195 | The Invention of Science | David Wootton
+Author’s book page: https://www.inventionofscience.com/
+
+n196 | The Visual Display of Quantitative Information | Edward R. Tufte
+Author’s book page: https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/
+
+n197 | The Craft of Research | Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup & William T. FitzGerald
+Publisher book page: https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008
+
+n198 | The Scientists | John Gribbin
+Publisher book page: https://www.penguinrandomhouse.com/books/71864/the-scientists-by-john-gribbin/
+
+n199 | The Discoverers | Daniel J. Boorstin
+Publisher book page: https://www.penguinrandomhouse.com/books/16081/the-discoverers-by-daniel-j-boorstin/
+
+n200 | The Model Thinker | Scott E. Page
+Publisher book page: https://www.hachettebookgroup.com/titles/scott-e-page/the-model-thinker/9780465094622/?lens=basic-books
+

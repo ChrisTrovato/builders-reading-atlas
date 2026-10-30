@@ -1,0 +1,338 @@
+ENGINEERING / OCEAN / ROBOTICS / INDUSTRIAL / DEFENSE EXPANSION
+Prepared 2026-10-30. Owned additions: n201–n300. Exactly100 nonfiction works.
+
+RESEARCH AND VERIFICATION
+All100 titles and author attributions were checked against first-party publisher, author, NASA, or university evidence using web search and, where needed, direct page inspection. Most records point to an individual publisher book page. Exceptions are explicitly labeled author sites, official textbook sites, publisher samples/front matter, NASA records, or a university textbook catalog. No retailer-only URLs were substituted for these sources.
+
+The source checks establish bibliographic identity and support topic/scope descriptions. They do NOT mean that every book was read in full, that every factual claim inside a book was independently validated, or that every URL was exhaustively tested through all browser and regional variants. Some first-party evidence came from indexed publisher/catalog text rather than an unblocked full page. Publisher and author descriptions are promotional sources; the original relevance notes and caveats deliberately frame the books as material to think with, not authorities whose arguments must be accepted.
+
+Original200 was read before selection and checked for exact duplicate titles. Separate editions were not counted as separate books. Overlap in subject is intentional where authors offer materially different approaches; users are explicitly told not to buy every overlapping spacecraft-control reference.
+
+YEAR POLICY
+Publication year is nullable. When first-publication year or edition identity was ambiguous, year was left null instead of guessing. Numeric years are supported by primary bibliographic/catalog evidence. Links can point to a later reprint while the displayed year identifies the original work. Textbook editions should be checked before purchase. In particular, Computer Architecture links to the fifth edition to keep the listed two-author attribution consistent; the seventh edition has an additional author.
+
+SCOPE
+25 aerospace/flight/space entries (n201–n225).
+15 ocean/naval/maritime entries (n226–n240).
+30 robotics/AI/computing entries (n241–n270).
+15 manufacturing/design/reliability entries (n271–n285).
+15 defense history/strategy/institutions/ethics entries (n286–n300).
+
+Defense selections discuss history, strategy, governance, organizations, safety, and ethics. They do not curate practical weapon-construction, explosive, targeting, or attack manuals.
+
+All100 entries have original35–60-word relevance notes, a book-specific thinking question, a prerequisite or interpretive caveat, tags, and a source. Stages distinguish approachable entry points from advanced references. No private personal facts were added.
+
+SUGGESTED ACCESSIBLE STARTERS
+n212 Understanding Flight
+n213 Stick and Rudder
+n215 Rocket Men
+n233 The Brilliant Abyss
+n238 Ship of Gold in the Deep Blue Sea
+n241 The Robotics Primer
+n259 Our Robots, Ourselves
+n271 The Way Things Work
+n273 The Toaster Project
+n277 The Existential Pleasures of Engineering
+n286 Army of None
+
+BOOK-LEVEL SOURCE REGISTER
+n201 | Spacecraft Dynamics and Control | Marcel J. Sidi
+Publisher book page: https://www.cambridge.org/core/books/spacecraft-dynamics-and-control/E9CAEE81CD09527C99497FA8C7C35B0A
+
+n202 | Fundamentals of Spacecraft Attitude Determination and Control | F. Landis Markley and John L. Crassidis
+Publisher book page: https://link.springer.com/book/10.1007/978-1-4939-0802-8
+
+n203 | Spacecraft Formation Flying: Dynamics, Control and Navigation | Kyle Alfriend, Srinivas Rao Vadali, Pini Gurfil, Jonathan How, and Louis Breger
+Publisher book page: https://shop.elsevier.com/books/spacecraft-formation-flying/alfriend/978-0-7506-8533-7
+
+n204 | Aircraft Flight Dynamics and Control | Wayne Durham
+Publisher book page: https://www.wiley.com/en-br/shop/general-introductory-mechanical-engineering/aircraft-flight-dynamics-and-control-p-9781118646809
+
+n205 | Flight Dynamics | Robert F. Stengel
+Princeton University Press chapter sample: https://assets.press.princeton.edu/chapters/s7909.pdf
+
+n206 | Aircraft Control and Simulation: Dynamics, Controls Design, and Autonomous Systems | Brian L. Stevens, Frank L. Lewis, and Eric N. Johnson
+Publisher book page: https://www.wiley.com/en-gb/aircraft-control-and-simulation-dynamics-controls-design-and-autonomous-systems-3rd-edition-p-9781118870983
+
+n207 | Aircraft Structures for Engineering Students | T. H. G. Megson
+Publisher book page: https://shop.elsevier.com/books/aircraft-structures-for-engineering-students/megson/978-0-12-822868-5
+
+n208 | Aircraft Propulsion: Toward Net-Zero Aviation | Saeed Farokhi
+Publisher book page: https://www.wiley.com/en-us/aircraft-propulsion-toward-net-zero-aviation-4th-edition-p-9781394263127
+
+n209 | The Jet Engine | Rolls-Royce
+Publisher book page: https://www.wiley.com/en-cn/The%2BJet%2BEngine%2C%2B5th%2BEdition-p-9781119065999
+
+n210 | Principles of Helicopter Aerodynamics | J. Gordon Leishman
+Cambridge University Press front matter: https://assets.cambridge.org/97811070/13353/frontmatter/9781107013353_frontmatter.pdf
+
+n211 | Rotorcraft Aeromechanics | Wayne Johnson
+Publisher book page: https://www.cambridge.org/us/titles/rotorcraft-aeromechanics
+
+n212 | Understanding Flight | David W. Anderson and Scott Eberhardt
+Publisher book page: https://www.mheducation.com/highered/mhp/product/understanding-flight-second-edition.html?viewOption=student
+
+n213 | Stick and Rudder: An Explanation of the Art of Flying | Wolfgang Langewiesche
+Publisher book page: https://www.mheducation.com/highered/mhp/product/stick-rudder-explanation-art-flying.html
+
+n214 | First Man | James R. Hansen
+Publisher book page: https://www.simonandschuster.com/books/First-Man/James-R-Hansen/9781501153068
+
+n215 | Rocket Men | Robert Kurson
+Publisher book page: https://www.penguinrandomhouse.com/books/530583/rocket-men-by-robert-kurson/9780812988703/
+
+n216 | Stages to Saturn: A Technological History of the Apollo/Saturn Launch Vehicles | Roger E. Bilstein
+NASA Technical Reports Server: https://ntrs.nasa.gov/citations/19970009949
+
+n217 | Coming Home: Reentry and Recovery from Space | Roger D. Launius and Dennis R. Jenkins
+NASA book page: https://www.nasa.gov/aeronautics/coming-home/
+
+n218 | Taming Liquid Hydrogen: The Centaur Upper Stage Rocket, 1958–2002 | Virginia P. Dawson and Mark D. Bowles
+NASA Technical Reports Server: https://ntrs.nasa.gov/citations/20040084080
+
+n219 | Wings in Orbit: Scientific and Engineering Legacies of the Space Shuttle, 1971–2010 | Wayne Hale, Helen Lane, Gail Chapline, and Kamlesh Lulla, editors
+NASA Technical Reports Server: https://ntrs.nasa.gov/citations/20110011792
+
+n220 | Introduction to Aircraft Flight Mechanics | Thomas R. Yechout
+University of Central Florida textbook record: https://stars.library.ucf.edu/etextbooks/956/
+
+n221 | Moondust: In Search of the Men Who Fell to Earth | Andrew Smith
+Publisher book page: https://www.bloomsbury.com/uk/moondust-9781526611574/
+
+n222 | In the Shadow of the Moon | Francis French and Colin Burgess
+Publisher book page: https://www.nebraskapress.unl.edu/nebraska/9780803209848/in-the-shadow-of-the-moon/
+
+n223 | ADCS: Spacecraft Attitude Determination and Control | Mark Paluszek
+Publisher book page: https://shop.elsevier.com/books/adcs-spacecraft-attitude-determination-and-control/paluszek/978-0-323-99915-1
+
+n224 | Out of This World: The New Field of Space Architecture | A. Scott Howe and Brent Sherwood, editors
+Space Architecture Technical Committee book material: https://www.spacearchitect.org/pubs/OutOfThisWorld-cover-large.pdf
+
+n225 | Living Aloft: Human Requirements for Extended Spaceflight | Mary M. Connors, Albert A. Harrison, and Faren R. Akins
+NASA Technical Reports Server: https://ntrs.nasa.gov/search.jsp?R=19850024459
+
+n226 | Introduction to Naval Architecture | E. C. Tupper
+Publisher book page: https://shop.elsevier.com/books/introduction-to-naval-architecture/tupper/978-0-08-098237-3
+
+n227 | Marine Hydrodynamics | J. N. Newman
+Publisher book page: https://mitpress.mit.edu/9780262140263/marine-hydrodynamics/
+
+n228 | Handbook of Marine Craft Hydrodynamics and Motion Control | Thor I. Fossen
+Publisher book page: https://onlinelibrary.wiley.com/doi/book/10.1002/9781119994138
+
+n229 | Marine Propellers and Propulsion | John Carlton
+Publisher book page: https://shop.elsevier.com/books/marine-propellers-and-propulsion/carlton/978-0-08-100366-4
+
+n230 | The ROV Manual: A User Guide for Remotely Operated Vehicles | Robert D. Christ and Robert L. Wernli Sr.
+Publisher book page: https://shop.elsevier.com/books/the-rov-manual/christ/978-0-08-098288-5
+
+n231 | Underwater Robotics: Science, Design & Fabrication | Steven W. Moore, Harry Bohm, and Vickie Jensen
+MATE publisher front matter: https://www.marinetech.org/files/marine/files/Underwater%20Robotics%20Text/Front%20Materials.pdf
+
+n232 | Ship Design for Efficiency and Economy | H. Schneekluth and Volker Bertram
+Publisher book page: https://shop.elsevier.com/books/ship-design-for-efficiency-and-economy/bertram/978-0-7506-4133-3
+
+n233 | The Brilliant Abyss | Helen Scales
+Publisher book page: https://groveatlantic.com/book/the-brilliant-abyss/
+
+n234 | The Underworld | Susan Casey
+Publisher book page: https://www.penguinrandomhouse.com/books/612438/the-underworld-by-susan-casey/9781984898869/
+
+n235 | The Wave | Susan Casey
+Publisher book page: https://www.penguinrandomhouse.com/books/25063/the-wave-by-susan-casey/
+
+n236 | The Ocean of Life | Callum Roberts
+Publisher book page: https://www.penguinrandomhouse.com/books/308613/the-ocean-of-life-by-callum-roberts/9781101583562/
+
+n237 | The Outlaw Ocean | Ian Urbina
+Publisher book page: https://www.penguinrandomhouse.com/books/538736/the-outlaw-ocean-by-ian-urbina/9781101972373/
+
+n238 | Ship of Gold in the Deep Blue Sea | Gary Kinder
+Publisher book page: https://groveatlantic.com/book/ship-of-gold-in-the-deep-blue-sea/
+
+n239 | The Sea and Civilization | Lincoln Paine
+Publisher book page: https://www.penguinrandomhouse.com/books/126127/the-sea-and-civilization-by-lincoln-paine/9781101970355/
+
+n240 | Reading the Glass | Elliot Rappaport
+Publisher book page: https://www.penguinrandomhouse.com/books/672096/reading-the-glass-by-elliot-rappaport/
+
+n241 | The Robotics Primer | Maja J. Matarić
+Publisher book page: https://mitpress.mit.edu/9780262633543/the-robotics-primer/
+
+n242 | Artificial Intelligence: A Modern Approach | Stuart Russell and Peter Norvig
+Authors' official textbook site: https://aima.cs.berkeley.edu/
+
+n243 | Deep Learning | Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+Authors' official open textbook: https://www.deeplearningbook.org/
+
+n244 | Understanding Deep Learning | Simon J. D. Prince
+Publisher book page: https://mitpress.mit.edu/9780262377102/understanding-deep-learning/
+
+n245 | Reinforcement Learning: An Introduction | Richard S. Sutton and Andrew G. Barto
+Publisher book page: https://mitpress.mit.edu/9780262039246/reinforcement-learning/
+
+n246 | Algorithms for Decision Making | Mykel J. Kochenderfer, Tim A. Wheeler, and Kyle H. Wray
+Publisher book page: https://mitpress.mit.edu/9780262047012/algorithms-for-decision-making/
+
+n247 | Algorithms for Optimization | Mykel J. Kochenderfer and Tim A. Wheeler
+Publisher book page: https://mitpress.mit.edu/9780262039420/algorithms-for-optimization/
+
+n248 | Probabilistic Machine Learning: An Introduction | Kevin P. Murphy
+Publisher book page: https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/
+
+n249 | Pattern Recognition and Machine Learning | Christopher M. Bishop
+Publisher book page: https://link.springer.com/in/book/9780387310732
+
+n250 | Robotics: Modelling, Planning and Control | Bruno Siciliano, Lorenzo Sciavicco, Luigi Villani, and Giuseppe Oriolo
+Publisher book page: https://link.springer.com/book/10.1007/978-1-84628-642-1
+
+n251 | Robotics, Vision and Control: Fundamental Algorithms in Python | Peter Corke
+Publisher book page: https://link.springer.com/book/10.1007/978-3-031-06469-2
+
+n252 | Introduction to Autonomous Mobile Robots | Roland Siegwart, Illah Reza Nourbakhsh, and Davide Scaramuzza
+Publisher book page: https://mitpress.mit.edu/9780262015356/introduction-to-autonomous-mobile-robots/
+
+n253 | Planning Algorithms | Steven M. LaValle
+Author's official open textbook: https://www.lavalle.pl/planning/
+
+n254 | Introduction to Autonomous Robots | Nikolaus Correll, Bradley Hayes, Christoffer Heckman, and Alessandro Roncone
+Publisher book page: https://mitpress.mit.edu/9780262047555/introduction-to-autonomous-robots/
+
+n255 | Introduction to AI Robotics | Robin R. Murphy
+Publisher book page: https://mitpress.mit.edu/9780262038485/introduction-to-ai-robotics/
+
+n256 | Behavior-Based Robotics | Ronald C. Arkin
+Publisher book page: https://mitpress.mit.edu/9780262529204/behavior-based-robotics/
+
+n257 | Human-Robot Interaction: An Introduction | Christoph Bartneck, Tony Belpaeme, Friederike Eyssel, Takayuki Kanda, Merel Keijsers, and Selma Šabanović
+Authors' official textbook site: https://www.human-robot-interaction.org/
+
+n258 | Robot Ethics 2.0: From Autonomous Cars to Artificial Intelligence | Patrick Lin, Keith Abney, and Ryan Jenkins, editors
+Publisher book page: https://academic.oup.com/book/2320
+
+n259 | Our Robots, Ourselves | David A. Mindell
+Publisher book page: https://www.penguinrandomhouse.com/books/316326/our-robots-ourselves-by-david-a-mindell/
+
+n260 | Disaster Robotics | Robin R. Murphy
+Publisher book page: https://mitpress.mit.edu/9780262534659/disaster-robotics/
+
+n261 | The New Breed | Kate Darling
+Publisher book page: https://us.macmillan.com/books/9781250838421/thenewbreed/
+
+n262 | Designing Data-Intensive Applications | Martin Kleppmann
+Author's official book site: https://dataintensive.net/
+
+n263 | The Pragmatic Programmer | David Thomas and Andrew Hunt
+Publisher book page: https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
+
+n264 | The Missing README | Chris Riccomini and Dmitriy Ryaboy
+Publisher book page: https://nostarch.com/node/615
+
+n265 | Computer Organization and Design RISC-V Edition | David A. Patterson and John L. Hennessy
+Publisher book page: https://shop.elsevier.com/books/computer-organization-and-design-risc-v-edition/patterson/978-0-12-820331-6
+
+n266 | The Mythical Man-Month | Frederick P. Brooks Jr.
+Publisher book page: https://www.pearson.com/en-gb/subject-catalog/p/mythical-man-month-the-essays-on-software-engineering-anniversary-edition/P200000000149/9780132119160
+
+n267 | Computer Architecture: A Quantitative Approach | John L. Hennessy and David A. Patterson
+Publisher book page: https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8
+
+n268 | The Innovators | Walter Isaacson
+Publisher book page: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+
+n269 | Genius Makers | Cade Metz
+Publisher book page: https://www.penguinrandomhouse.com/books/565698/genius-makers-by-cade-metz/
+
+n270 | Working with AI: Real Stories of Human-Machine Collaboration | Thomas H. Davenport and Steven M. Miller
+Publisher book page: https://mitpress.mit.edu/9780262371193/working-with-ai/
+
+n271 | The Way Things Work | David Macaulay and Neil Ardley
+Publisher book page: https://dk.com/products/9780241569764-the-way-things-work
+
+n272 | Product Design and Development | Karl T. Ulrich, Steven D. Eppinger, and Maria C. Yang
+Publisher book page: https://www.mheducation.com/highered/product/Product-Design-and-Development-Ulrich.html
+
+n273 | The Toaster Project | Thomas Thwaites
+Author-hosted book material: https://www.thomasthwaites.com/folio5/wp-content/uploads/2019/07/Toaster_Project-Thomas_Thwaites-Complete.pdf
+
+n274 | The Design of Future Things | Don Norman
+Publisher book page: https://www.hachettebookgroup.com/titles/don-norman/the-design-of-future-things/9780465013036//?lens=basic-books
+
+n275 | Emotional Design | Don Norman
+Author's official book page: https://jnd.org/books/emotional-design-why-we-love-or-hate-everyday-things/
+
+n276 | Designing Interactions | Bill Moggridge
+Publisher book page: https://mitpress.mit.edu/9780262134743/designing-interactions/
+
+n277 | The Existential Pleasures of Engineering | Samuel C. Florman
+Publisher book page: https://us.macmillan.com/books/9780312141042/theexistentialpleasuresofengineering/
+
+n278 | The Evolution of Useful Things | Henry Petroski
+Publisher book page: https://www.penguinrandomhouse.com/books/130244/the-evolution-of-useful-things-by-henry-petroski/
+
+n279 | The Essential Engineer | Henry Petroski
+Publisher book page: https://www.penguinrandomhouse.com/books/130236/the-essential-engineer-by-henry-petroski/
+
+n280 | Engineering Design: A Systematic Approach | Gerhard Pahl, Wolfgang Beitz, Jörg Feldhusen, and Karl-Heinrich Grote
+Publisher book page: https://link.springer.com/book/10.1007/978-1-84628-319-2
+
+n281 | Lean Thinking | James P. Womack and Daniel T. Jones
+Publisher book page: https://www.simonandschuster.com/books/Lean-Thinking/James-P-Womack/9781439135952
+
+n282 | Toyota Production System: Beyond Large-Scale Production | Taiichi Ohno
+Publisher book page: https://www.routledge.com/Toyota-Production-System-Beyond-LargeScale-Production/Ohno/p/book/9780915299140
+
+n283 | Out of the Crisis | W. Edwards Deming
+Publisher book page: https://mitpress.mit.edu/9780262350037/out-of-the-crisis/
+
+n284 | A Life in Error: From Little Slips to Big Disasters | James Reason
+Publisher book page: https://www.routledge.com/A-Life-in-Error-From-Little-Slips-to-Big-Disasters/Reason/p/book/9781472418418
+
+n285 | The Field Guide to Understanding 'Human Error' | Sidney Dekker
+Publisher book page: https://www.routledge.com/The-Field-Guide-to-Understanding-Human-Error/Dekker/p/book/9781472439048
+
+n286 | Army of None: Autonomous Weapons and the Future of War | Paul Scharre
+Author's official book page: https://www.paulscharre.com/army-of-none
+
+n287 | Four Battlegrounds: Power in the Age of Artificial Intelligence | Paul Scharre
+Author's official book page: https://www.paulscharre.com/four-battlegrounds
+
+n288 | The Kill Chain: Defending America in the Future of High-Tech Warfare | Christian Brose
+Publisher book page: https://www.hachettebookgroup.com/titles/christian-brose/the-kill-chain/9780316533539/
+
+n289 | The Future of War: A History | Lawrence Freedman
+Publisher book page: https://www.hachettebookgroup.com/titles/lawrence-freedman/the-future-of-war/9781541742772/
+
+n290 | Strategy: A History | Lawrence Freedman
+Publisher book page: https://india.oup.com/product/strategy-9780199470723/
+
+n291 | War Made New | Max Boot
+Publisher book page: https://www.penguinrandomhouse.com/books/292167/war-made-new-by-max-boot/9781592403158/
+
+n292 | Wired for War | P. W. Singer
+Publisher book page: https://www.penguinrandomhouse.com/books/303774/wired-for-war-by-p-w-singer/
+
+n293 | The Pentagon's Brain | Annie Jacobsen
+Publisher book page: https://www.hachettebookgroup.com/titles/annie-jacobsen/the-pentagons-brain/9780316387699/
+
+n294 | The Imagineers of War | Sharon Weinberger
+Publisher book page: https://www.penguinrandomhouse.com/books/234382/the-imagineers-of-war-by-sharon-weinberger/9780385351805/
+
+n295 | Command and Control | Eric Schlosser
+Publisher book page: https://www.penguinrandomhouse.com/books/303337/command-and-control-by-eric-schlosser/
+
+n296 | The Bomber Mafia | Malcolm Gladwell
+Publisher book page: https://www.hachettebookgroup.com/titles/malcolm-gladwell/9780316296618/9780316296618/
+
+n297 | Sea Power | James Stavridis
+Publisher book page: https://www.penguinrandomhouse.com/books/539884/sea-power-by-admiral-james-stavridis-usn-ret/9780735220607/
+
+n298 | The Silent Deep | Peter Hennessy and James Jinks
+Publisher book page: https://www.penguin.co.uk/books/183977/the-silent-deep-by-hennessy-peter-and-james-jinks/9780241959480
+
+n299 | The Perfect Weapon | David E. Sanger
+Publisher book page: https://www.penguinrandomhouse.com/books/547683/the-perfect-weapon-by-david-e-sanger/
+
+n300 | The Guns at Last Light | Rick Atkinson
+Publisher book page: https://us.macmillan.com/books/9780805062908/thegunsatlastlight/
+

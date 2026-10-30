@@ -1,0 +1,12 @@
+.git
+.github
+.env*
+node_modules
+docs
+tests
+scripts
+README.md
+AGENTS.md
+WORK_LOG.md
+package.json
+*.zip
