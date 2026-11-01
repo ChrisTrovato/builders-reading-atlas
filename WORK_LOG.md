@@ -77,3 +77,12 @@ Removed the unsolicited attribution section and personal-assessment language fro
 ### Boundaries
 
 The models remain educational approximations, not flight design tools. Reading stages and mission connections are editorial guidance. No study progress is invented or published; visitor records stay in their browser. Public deployment is limited to the existing books project and its established alias.
+
+### Publication verification
+
+- Pushed the aerospace implementation and mobile copy correction to the existing GitHub repository. Production source commit: `84f8055e45271fce73bdba63c81ce8b6466f3446`.
+- GitHub Actions validation completed successfully: [run 41363350190](https://github.com/ChrisTrovato/builders-reading-atlas/actions/runs/41363350190).
+- Vercel production deployment `dpl_6QrvDSb1iekeoYn9z1FbueVPBsWH` reached READY and assigned the existing `ditch-the-scroll-books.vercel.app` alias used by the public `/books/` rewrite.
+- Anonymous HTTP checks confirmed all 18 public site files matched the committed release byte for byte, including images and all six JSON datasets.
+- `/books` and `/books_to_read` resolve to the canonical `/books/` path.
+- The root homepage and the destinations reached through the Factory and Beyond Earth routes retained their exact pre-release content hashes.
