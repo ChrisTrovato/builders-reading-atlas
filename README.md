@@ -4,7 +4,7 @@ A public learning basecamp for people drawn to aerospace, robotics, physical mac
 
 **[Open the live atlas](https://ditchthescroll.com/books/) · [Explore the knowledge map](https://ditchthescroll.com/books/#atlas) · [Browse the library](https://ditchthescroll.com/books/#library)**
 
-The expanded edition contains **500 books: 350 nonfiction and 150 fiction**, connected through **16 knowledge fields and 20 reading routes**. It gives a beginning student somewhere to start and an experienced reader room to keep exploring.
+The expanded edition contains **500 books: 350 nonfiction and 150 fiction**, connected through **16 knowledge fields and 26 reading routes**. It gives a beginning student somewhere to start and an experienced reader room to keep exploring.
 
 ![Speculative orbital construction above Earth](dist/books/assets/orbital-shipyard.png)
 
@@ -14,8 +14,9 @@ The expanded edition contains **500 books: 350 nonfiction and 150 fiction**, con
 
 - Searches and filters the complete catalog by field, subject, reading stage, demand, and type.
 - Offers three-book starter shelves and field guides linking each subject to engineering.
-- Connects algebra, calculus, physics, materials, writing, and other coursework to physical capabilities through twelve learning bridges.
-- Includes six small project briefs and two interactive mechanism models.
+- Connects algebra, calculus, physics, materials, writing, and other coursework to physical capabilities through 25 learning bridges.
+- Includes seven small project briefs and five interactive models.
+- Connects six aerospace missions to ten disciplines, foundational lessons, staged books, projects, and an advanced textbook companion.
 - Explores space construction, habitats, factories, oceans, and flight through five frontier dossiers.
 - Pairs technical ambition with philosophy, institutional questions, and 150 fictional worlds.
 - Saves reading status, book notes, and field notes locally in the visitor’s browser.
@@ -43,7 +44,7 @@ Open http://127.0.0.1:4173/books/.
 npm test
 ```
 
-Validation checks the 500-book catalog, unique IDs, legacy shelf compatibility, source URL structure, all knowledge-field memberships, the 20 reading routes, rendered views, filters, import sanitization, and the two numerical models. It does not prove every external source remains online or verify every claim made in a book.
+Validation checks the 500-book catalog, unique IDs, legacy shelf compatibility, source URL structure, all knowledge-field memberships, the 26 reading routes, rendered views, filters, import sanitization, and all five numerical models. It does not prove every external source remains online or verify every claim made in a book.
 
 ## Project structure
 
@@ -54,6 +55,7 @@ Validation checks the 500-book catalog, unique IDs, legacy shelf compatibility, 
 | `dist/books/app.js` | Library, reading routes, book dialogs, shelf, and backups |
 | `dist/books/atlas.js` | Knowledge map, subject guides, starter picker, and Markdown export |
 | `dist/books/journey.js` | Coursework bridges, frontier pages, workbench, and journal |
+| `dist/books/aerospace.js` / `aerospace.json` / `aerospace.css` | Aerospace missions, disciplines, textbook companion, and new models |
 | `dist/books/learning.json` | Worked examples and small projects |
 | `dist/books/philosophy.json` | Philosophical lenses, essays, and evidence distinctions |
 | `dist/books/frontiers.json` | Frontier dossiers and sources |

@@ -2,6 +2,92 @@
   "editorialNote": "Original learning examples, not an accredited curriculum or admission plan. Sources explain the underlying principles; the aerospace connections and suggested bench exercises are editorial synthesis. Start with the algebra bridge. Preview later topics for motivation without expecting to master them yet.",
   "bridges": [
     {
+      "id": "arithmetic",
+      "title": "Arithmetic → account for every part",
+      "hook": "A spacecraft mass budget begins with addition, not advanced mathematics.",
+      "future": "A budget makes a constraint visible before parts are built.",
+      "lesson": "A model allows 500 g for its payload. A camera is 120 g, its mount 80 g, and a demonstration computer 150 g. Together they use 120 + 80 + 150 = 350 g. Subtract this from the allowance: 500 − 350 = 150 g remains. Grams measure mass. The allowance is a chosen limit, not another component to add. Sketch a 500 g bar and divide it into labeled pieces.",
+      "question": "A 40 g cable is added. How much remains?",
+      "answer": "110 g: 500 − (350 + 40). Add 390 g used and 110 g remaining to check the total.",
+      "activity": "Make a pretend packing budget with five objects. Estimate first, then add.",
+      "misconception": "A positive remainder is not proof of flight readiness; missing items can consume it.",
+      "source": {
+        "label": "OpenStax · Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e"
+      },
+      "prerequisites": [],
+      "bookIds": [
+        "n090",
+        "n099"
+      ]
+    },
+    {
+      "id": "fractions",
+      "title": "Fractions → divide a limited resource",
+      "hook": "One quarter means one of four equal shares.",
+      "future": "Ratios and percentages express allocations, scale, and margin.",
+      "lesson": "Imagine 100 Wh of usable energy. One quarter is 100 divided by 4, or 25 Wh. Three quarters is three such shares: 75 Wh. The same fraction is 0.25 as a decimal or 25 percent. These are three ways to express one relationship. They do not describe how quickly the energy is used; power does that.",
+      "question": "What is one fifth of 100 Wh, and what percentage is it?",
+      "answer": "20 Wh, or 20%. Five equal shares of 20 Wh make 100 Wh.",
+      "activity": "Draw a rectangle with five equal cells. Shade two and express the share as a fraction, decimal, and percentage.",
+      "misconception": "A 20% reserve of a total is different from adding 20% to a subtotal. State the reference.",
+      "source": {
+        "label": "OpenStax · Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e"
+      },
+      "prerequisites": [
+        "arithmetic"
+      ],
+      "bookIds": [
+        "n090",
+        "n085"
+      ]
+    },
+    {
+      "id": "units",
+      "title": "Units → keep the physical quantity intact",
+      "hook": "Changing units changes the number, not the object.",
+      "future": "Units make calculations comparable and help expose mistakes.",
+      "lesson": "A rail is 300 mm long. There are 1,000 mm in a meter, so 300 mm × (1 m / 1,000 mm) = 0.300 m. The mm units cancel. A length of 0.300 m has not become shorter. For area the conversion is squared: a 1 m by 1 m square contains 1,000,000 square millimeters.",
+      "question": "Convert 250 mm to meters.",
+      "answer": "0.250 m. Multiply by 1,000 to return to 250 mm.",
+      "activity": "Measure one object in centimeters, convert to meters, and check with a ruler.",
+      "misconception": "Do not use a length conversion unchanged for area or volume.",
+      "source": {
+        "label": "OpenStax · Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e"
+      },
+      "prerequisites": [
+        "fractions"
+      ],
+      "bookIds": [
+        "n091",
+        "n097"
+      ]
+    },
+    {
+      "id": "graphs",
+      "title": "Graphs → see the relationship",
+      "hook": "A graph gives each measured quantity an axis.",
+      "future": "Graphs turn a test record into something you can inspect and question.",
+      "lesson": "A temperature sensor reads 20°C at 0 min, 24°C at 2 min, and 28°C at 4 min. Put time on the horizontal axis and temperature on the vertical axis. The average change is 8°C over 4 min: 2°C per minute. Connecting the points with a line is a model. You have not measured every moment between them.",
+      "question": "If this linear model continues, what temperature is predicted at 5 min?",
+      "answer": "30°C: 20 + 2 × 5. It is a prediction, not a new measurement.",
+      "activity": "Plot the three points, label both axes, and draw the predicted fourth point in a different style.",
+      "misconception": "A line between observations can hide changes you did not measure.",
+      "source": {
+        "label": "OpenStax · Prealgebra 2e",
+        "url": "https://openstax.org/details/books/prealgebra-2e"
+      },
+      "prerequisites": [
+        "units"
+      ],
+      "bookIds": [
+        "n091",
+        "n085"
+      ]
+    },
+    {
       "id": "algebra",
       "title": "Algebra → making the parts fit",
       "hook": "The unknown x can be a real gap you need to leave between two pieces of hardware.",
@@ -10,7 +96,10 @@
       "question": "The rail becomes 340 mm long. With the same two blocks and three equal clearances, what is x?",
       "answer": "60 mm. The blocks occupy 160 mm, leaving 180 mm. Dividing that remainder among three clearances gives 60 mm each.",
       "activity": "Sketch both layouts with a ruler. Label every dimension and add them back up.",
-      "source": {"label": "OpenStax · Linear equations in one variable", "url": "https://openstax.org/books/college-algebra-2e/pages/2-2-linear-equations-in-one-variable"}
+      "source": {
+        "label": "OpenStax · Linear equations in one variable",
+        "url": "https://openstax.org/books/college-algebra-2e/pages/2-2-linear-equations-in-one-variable"
+      }
     },
     {
       "id": "functions",
@@ -21,7 +110,10 @@
       "question": "At what time does the model predict x = 0.80 m?",
       "answer": "6 s. Subtract the starting 0.20 m, then divide 0.60 m by 0.10 m/s.",
       "activity": "Draw predicted positions every second. Roll a toy cart and compare real observations with the straight-line assumption.",
-      "source": {"label": "OpenStax · Linear functions", "url": "https://openstax.org/books/college-algebra/pages/4-1-linear-functions"}
+      "source": {
+        "label": "OpenStax · Linear functions",
+        "url": "https://openstax.org/books/college-algebra/pages/4-1-linear-functions"
+      }
     },
     {
       "id": "trigonometry",
@@ -32,7 +124,10 @@
       "question": "What are the tip coordinates when the link points straight up at 90°?",
       "answer": "x = 0 cm and y = 20 cm, because cos(90°) = 0 and sin(90°) = 1.",
       "activity": "Use a cardboard strip, paper fastener, and protractor to compare your predictions with measured tip positions.",
-      "source": {"label": "OpenStax · Right triangle trigonometry", "url": "https://openstax.org/books/precalculus-2e/pages/5-4-right-triangle-trigonometry"}
+      "source": {
+        "label": "OpenStax · Right triangle trigonometry",
+        "url": "https://openstax.org/books/precalculus-2e/pages/5-4-right-triangle-trigonometry"
+      }
     },
     {
       "id": "vectors",
@@ -43,7 +138,10 @@
       "question": "A second robot moves 6 m east and 8 m north. What is its displacement magnitude?",
       "answer": "10 m: √(6² + 8²) = √100. Its route length would be 14 m if it traveled those legs separately.",
       "activity": "Draw routes on graph paper and compare route length with the arrow from start to finish.",
-      "source": {"label": "OpenStax · Vector components", "url": "https://openstax.org/books/university-physics-volume-1/pages/2-2-coordinate-systems-and-components-of-a-vector"}
+      "source": {
+        "label": "OpenStax · Vector components",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/2-2-coordinate-systems-and-components-of-a-vector"
+      }
     },
     {
       "id": "derivatives",
@@ -54,7 +152,10 @@
       "question": "What instantaneous velocity does this model predict at t = 4 s?",
       "answer": "4 m/s. Substitute t = 4 s into v(t) = (1 m/s²)t. The units reduce correctly to m/s.",
       "activity": "Plot five positions from the model. Notice how equal time steps produce progressively larger changes in position.",
-      "source": {"label": "OpenStax · Defining the derivative", "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"}
+      "source": {
+        "label": "OpenStax · Defining the derivative",
+        "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative"
+      }
     },
     {
       "id": "integrals",
@@ -65,7 +166,10 @@
       "question": "A constant 40 W device runs for 2 h. How much energy does it use?",
       "answer": "80 Wh. Power multiplied by elapsed time gives energy. This equals 288,000 J because one hour is 3,600 seconds.",
       "activity": "Draw a rectangle and triangle under the two flow models. Compare their areas before learning integral notation.",
-      "source": {"label": "OpenStax · The definite integral", "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"}
+      "source": {
+        "label": "OpenStax · The definite integral",
+        "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+      }
     },
     {
       "id": "differential-equations",
@@ -76,7 +180,10 @@
       "question": "With the same room and k, what is the instantaneous rate at T = 40°C?",
       "answer": "−2°C/min: −0.10 × (40 − 20). The negative sign means temperature is falling.",
       "activity": "Plot the predicted cooling rate for several temperatures on paper. Ask which assumptions would fail for a spacecraft radiator.",
-      "source": {"label": "OpenStax · Separable equations and cooling", "url": "https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations"}
+      "source": {
+        "label": "OpenStax · Separable equations and cooling",
+        "url": "https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations"
+      }
     },
     {
       "id": "linear-algebra",
@@ -87,7 +194,10 @@
       "question": "Where does (3 cm, 0 cm) go under that rotation?",
       "answer": "(0 cm, 3 cm). A point on the positive horizontal axis moves onto the positive vertical axis.",
       "activity": "Rotate a marked piece of graph paper by a quarter turn. Track three points and check their distances from the origin.",
-      "source": {"label": "MIT OpenCourseWare · Linear algebra", "url": "https://www.ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"}
+      "source": {
+        "label": "MIT OpenCourseWare · Linear algebra",
+        "url": "https://www.ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"
+      }
     },
     {
       "id": "free-body",
@@ -98,7 +208,10 @@
       "question": "What net force produces a 3 m/s² acceleration of that 2 kg cart?",
       "answer": "6 N, in the acceleration's direction. Fnet = ma = 2 kg × 3 m/s².",
       "activity": "Draw separate diagrams for a book on a table and a gently pulled toy cart. Label only forces acting on your chosen object.",
-      "source": {"label": "OpenStax · Drawing free-body diagrams", "url": "https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams"}
+      "source": {
+        "label": "OpenStax · Drawing free-body diagrams",
+        "url": "https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams"
+      }
     },
     {
       "id": "statistics",
@@ -109,7 +222,10 @@
       "question": "If a sixth result is 2.0 s, what is the new mean?",
       "answer": "Still 2.0 s. The original total is 10.0 s; adding 2.0 s gives 12.0 s across six trials.",
       "activity": "Record five trials before choosing your favorite result. Note release height, operator, and any obvious mistakes rather than silently deleting inconvenient data.",
-      "source": {"label": "NIST · Measurement process characterization", "url": "https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process"}
+      "source": {
+        "label": "NIST · Measurement process characterization",
+        "url": "https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process"
+      }
     },
     {
       "id": "writing-ge",
@@ -120,7 +236,10 @@
       "question": "What crucial information is missing from 'Design B is 20% better'?",
       "answer": "Better by which measure, compared with what baseline, under which conditions, across how many tests, and with what tradeoffs? A percentage without context cannot support a sound decision.",
       "activity": "Write a 150-word report about one small build. Ask someone else to explain your result back to you.",
-      "source": {"label": "MIT Mechanical Engineering · Communication guidelines", "url": "https://meche.mit.edu/node/781"}
+      "source": {
+        "label": "MIT Mechanical Engineering · Communication guidelines",
+        "url": "https://meche.mit.edu/node/781"
+      }
     },
     {
       "id": "materials-manufacturing",
@@ -131,7 +250,218 @@
       "question": "If the hole instead permits 10.10 ± 0.05 mm, what is the minimum diametral clearance?",
       "answer": "0.00 mm: the smallest permitted hole and largest permitted pin are both 10.05 mm. The nominal gap no longer guarantees positive clearance.",
       "activity": "Measure repeated cardboard tabs and slots with a ruler. Record which fit, then distinguish your intended dimensions from the parts you made.",
-      "source": {"label": "NIST · Additive manufacturing part qualification", "url": "https://www.nist.gov/programs-projects/additive-manufacturing-part-qualification"}
+      "source": {
+        "label": "NIST · Additive manufacturing part qualification",
+        "url": "https://www.nist.gov/programs-projects/additive-manufacturing-part-qualification"
+      }
+    },
+    {
+      "id": "energy",
+      "title": "Power & energy → how long can it operate?",
+      "hook": "Watts describe a rate; watt-hours describe an amount.",
+      "future": "Spacecraft power budgets connect operating time, loads, and stored energy.",
+      "lesson": "An ideal constant 20 W load running for 3 h consumes 20 × 3 = 60 Wh. A 100 Wh battery with only 80% usable energy provides 80 Wh in this simplified model. At 20 W that is 4 h. Usable fraction here includes the reserve or limitations you choose; do not subtract the same reserve twice. Real batteries also depend on temperature, aging, and discharge conditions.",
+      "question": "How much energy does 30 W consume in 2 h?",
+      "answer": "60 Wh. Twice the duration at half the power gives the same energy.",
+      "activity": "Write a power budget for three imaginary instruments with different operating times.",
+      "misconception": "Amp-hours alone are not energy; voltage matters.",
+      "source": {
+        "label": "OpenStax · University Physics Volume 2",
+        "url": "https://openstax.org/details/books/university-physics-volume-2"
+      },
+      "prerequisites": [
+        "fractions",
+        "units"
+      ],
+      "bookIds": [
+        "n080",
+        "n036"
+      ]
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Thermodynamics → follow the energy",
+      "hook": "Choose a boundary, then ask what crosses it.",
+      "future": "Engines, batteries, instruments, and habitats all need energy accounting.",
+      "lesson": "Imagine an ideal device with 100 J entering as energy. It transfers 30 J out as useful work and 70 J out as heat, with no energy stored inside. The balance is 100 = 30 + 70. Heat is energy transferred because of a temperature difference. Temperature is a state quantity, not a stored quantity of heat. Useful-work efficiency for this chosen boundary is 30 / 100 = 30%.",
+      "question": "If useful work is 25 J for the same 100 J input and no storage, how much leaves as heat?",
+      "answer": "75 J. The specified energy balance must close.",
+      "activity": "Draw the boundary and arrows before doing the arithmetic.",
+      "misconception": "Conservation does not say all energy can be converted into useful work.",
+      "source": {
+        "label": "OpenStax · University Physics Volume 2",
+        "url": "https://openstax.org/details/books/university-physics-volume-2"
+      },
+      "prerequisites": [
+        "energy"
+      ],
+      "bookIds": [
+        "n097",
+        "n036"
+      ]
+    },
+    {
+      "id": "fluids",
+      "title": "Fluids → what flows through the boundary?",
+      "hook": "Start with what enters, leaves, and accumulates.",
+      "future": "Fluid mechanics connects air around wings to water and gas in life-support systems.",
+      "lesson": "Water enters an ideal tank at 3 L/min and leaves at 2 L/min. The stored amount increases at 1 L/min. Starting with 10 L, it reaches 15 L after 5 min if both rates stay constant and the tank has room. For compressible gases, volume flow alone is not enough: density can change, so mass conservation is the stronger accounting principle.",
+      "question": "What happens if inflow falls to 1 L/min while outflow stays 2 L/min?",
+      "answer": "The tank loses 1 L/min until assumptions change, such as the tank emptying.",
+      "activity": "Draw a tank boundary with two arrows and a storage box.",
+      "misconception": "A high flow speed does not by itself tell you the total quantity delivered.",
+      "source": {
+        "label": "OpenStax · University Physics Volume 1",
+        "url": "https://openstax.org/details/books/university-physics-volume-1"
+      },
+      "prerequisites": [
+        "units",
+        "functions"
+      ],
+      "bookIds": [
+        "n097",
+        "n032"
+      ]
+    },
+    {
+      "id": "aerodynamics",
+      "title": "Aerodynamics → forces from moving air",
+      "hook": "An aircraft interacts with a fluid, not an empty backdrop.",
+      "future": "Pressure and shear acting over surfaces produce aerodynamic forces.",
+      "lesson": "For an illustrative fixed-condition model, lift L = 0.5 × density × speed² × wing area × lift coefficient. If density, area, and coefficient stay fixed, doubling speed multiplies predicted lift by four. The coefficient is not a universal constant: angle of attack, geometry, flow regime, and stall can change it. This equation organizes dependencies; it does not by itself predict every flow.",
+      "question": "Under those fixed assumptions, what happens to lift when wing area doubles?",
+      "answer": "Predicted lift doubles. Only the speed term is squared.",
+      "activity": "Sketch arrows for lift, weight, thrust, and drag in a simplified steady level-flight case.",
+      "misconception": "Do not assume air parcels separated at a wing must meet again simultaneously.",
+      "source": {
+        "label": "NASA · Beginner’s Guide to Aeronautics",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/"
+      },
+      "prerequisites": [
+        "vectors",
+        "free-body"
+      ],
+      "bookIds": [
+        "n006",
+        "n033"
+      ]
+    },
+    {
+      "id": "propulsion",
+      "title": "Propulsion → change momentum",
+      "hook": "A vehicle changes motion by exchanging momentum.",
+      "future": "Propulsion links fluid flow, energy, forces, and mission needs.",
+      "lesson": "In a simplified thrust model with no pressure correction, thrust equals mass flow rate times exhaust speed relative to the engine. If 2 kg/s leaves at 1,000 m/s, the model gives 2,000 N. This does not specify a buildable engine; it excludes nozzle pressure terms and internal losses. Rockets do not need air to push against. Air-breathing engines use atmospheric air, while rockets carry their propellant supplies.",
+      "question": "What thrust does 1 kg/s at 1,000 m/s give in this ideal model?",
+      "answer": "1,000 N. The units kg·m/s² are newtons.",
+      "activity": "Draw the system boundary and identify which mass crosses it.",
+      "misconception": "Thrust and efficiency are different properties; a larger thrust is not always the right mission choice.",
+      "source": {
+        "label": "NASA · Beginner’s Guide to Aeronautics",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/"
+      },
+      "prerequisites": [
+        "free-body",
+        "thermodynamics",
+        "fluids"
+      ],
+      "bookIds": [
+        "n004",
+        "n037"
+      ]
+    },
+    {
+      "id": "space-propulsion",
+      "title": "Space propulsion → match the engine to the mission",
+      "hook": "A gentle push over a long time can serve a different purpose from a brief powerful push.",
+      "future": "Electrical power, propellant use, thrust, and duration interact.",
+      "lesson": "For an ideal 100 kg vehicle experiencing a constant 0.1 N force, acceleration is force divided by mass: 0.001 m/s². After 100 s, velocity changes by 0.1 m/s if mass and force remain constant and other forces are ignored. This is a small teaching model, not an orbital maneuver solution. Electric propulsion can trade low thrust for efficient propellant use, with substantial power-system needs.",
+      "question": "At that acceleration, what is the ideal velocity change after 200 s?",
+      "answer": "0.2 m/s. A changing orbit, changing mass, and operating constraints require a richer model.",
+      "activity": "Compare two mission needs: launching from Earth and slowly adjusting an orbit. List why the requirements differ.",
+      "misconception": "High specific impulse does not mean high thrust or unlimited available power.",
+      "source": {
+        "label": "NASA · Beginner’s Guide to Aeronautics",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/"
+      },
+      "prerequisites": [
+        "propulsion",
+        "energy"
+      ],
+      "bookIds": [
+        "n037",
+        "n036"
+      ]
+    },
+    {
+      "id": "orbits",
+      "title": "Orbital motion → falling around a world",
+      "hook": "An orbit combines motion and gravity.",
+      "future": "Orbital mechanics connects forces to trajectories and mission constraints.",
+      "lesson": "In an ideal circular orbit, speed v = √(μ/r), where μ is the central body’s gravitational parameter and r is distance from its center. If radius increases by a factor of four, speed falls to one half because √(1/4) = 1/2. Altitude is measured above a surface; radius includes the planet. The orbit lab lets you explore this distinction without solving a launch problem.",
+      "question": "How does speed change when circular-orbit radius is multiplied by nine?",
+      "answer": "It becomes one third of the original speed, under the same ideal assumptions.",
+      "activity": "Draw the planet, its center, surface radius, altitude, and orbital radius as separate labeled lengths.",
+      "misconception": "Spacecraft are not weightless because gravity has disappeared; orbit involves continuous free fall.",
+      "source": {
+        "label": "NASA · Orbits and Kepler’s laws",
+        "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+      },
+      "prerequisites": [
+        "fractions",
+        "vectors",
+        "functions"
+      ],
+      "bookIds": [
+        "n002",
+        "n034"
+      ]
+    },
+    {
+      "id": "feedback",
+      "title": "Feedback → compare, correct, observe",
+      "hook": "A command is not proof that a machine reached its target.",
+      "future": "Control systems connect sensing, dynamics, and actuation.",
+      "lesson": "A simple controller compares target r with output y. Error e = r − y. Proportional action is u = K × e, where K is a chosen gain. If the target is 1 and output is 0.4, error is 0.6; with gain 2 the command is 1.2 in normalized units. The physical system determines what happens next. In our first-order lab, proportional control leaves a steady error.",
+      "question": "What command results if output reaches 0.8 with the same target and gain?",
+      "answer": "0.4: error is 0.2, multiplied by gain 2.",
+      "activity": "Predict what increasing gain will do, then compare the final value and response rate in the lab.",
+      "misconception": "Gain does not universally cause overshoot. Behavior depends on the plant, delay, and controller.",
+      "source": {
+        "label": "Åström & Murray · Feedback Systems",
+        "url": "https://www.cds.caltech.edu/~murray/FBS/Second_Edition.html"
+      },
+      "prerequisites": [
+        "functions",
+        "differential-equations"
+      ],
+      "bookIds": [
+        "n089",
+        "n007"
+      ]
+    },
+    {
+      "id": "numerical-methods",
+      "title": "Numerical methods → question the simulation",
+      "hook": "A computed answer is an approximation you need to check.",
+      "future": "CFD and dynamic simulation depend on equations, discretization, and boundary conditions.",
+      "lesson": "Approximate distance traveled by a cart whose speed rises linearly from 0 to 2 m/s over 2 s. One left-endpoint rectangle predicts 0 m. Two one-second rectangles predict 0 × 1 + 1 × 1 = 1 m. Four half-second rectangles predict 1.5 m. The exact triangular area is 2 m. Refining a discretization improves this example, but refinement alone cannot repair a wrong physical model.",
+      "question": "What does one right-endpoint rectangle predict?",
+      "answer": "4 m: 2 m/s multiplied by 2 s. The sampling choice changes the error.",
+      "activity": "Draw the rectangles and compare them with the triangle before writing code.",
+      "misconception": "A colorful flow image is not evidence of a validated simulation.",
+      "source": {
+        "label": "UCSD · Computational Flow Physics teaching",
+        "url": "https://flowphysics.ucsd.edu/teaching/"
+      },
+      "prerequisites": [
+        "integrals",
+        "linear-algebra"
+      ],
+      "bookIds": [
+        "n096",
+        "n033"
+      ]
     }
   ],
   "projects": [
@@ -140,60 +470,145 @@
       "title": "A tiny flight-test program",
       "summary": "Turn a paper helicopter into your first repeatable flight experiment. One evening, one variable, one honest conclusion.",
       "materials": "Paper, blunt scissors, paper clip, ruler, stopwatch, notebook; an adult handles cutting and small parts when building with a child.",
-      "steps": ["Use NASA's paper-helicopter guide to make a baseline design.", "Release it at shoulder height while standing on the floor; record five descent times.", "Change only one feature, such as blade length, and repeat from the same height.", "Compare means and spread. Keep photographs and explain one limitation."],
+      "steps": [
+        "Use NASA's paper-helicopter guide to make a baseline design.",
+        "Release it at shoulder height while standing on the floor; record five descent times.",
+        "Change only one feature, such as blade length, and repeat from the same height.",
+        "Compare means and spread. Keep photographs and explain one limitation."
+      ],
       "learn": "Controlled comparisons, dimensions, repeated trials, and evidence. This is a falling autorotating model, not a scaled reproduction of powered Mars flight.",
       "stretch": "Write a one-page test report with a table and a recommendation for the next experiment.",
-      "source": {"label": "NASA · Make a paper Mars helicopter", "url": "https://www.nasa.gov/stem-content/make-a-paper-mars-helicopter/"}
+      "source": {
+        "label": "NASA · Make a paper Mars helicopter",
+        "url": "https://www.nasa.gov/stem-content/make-a-paper-mars-helicopter/"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
     },
     {
       "id": "cardboard-arm",
       "title": "A robot arm you can understand by touch",
       "summary": "Build a hand-operated two-link cardboard arm and map its reach before adding motors or software.",
       "materials": "Cardboard strips, paper fasteners, ruler, protractor, graph paper, pencil. Adult supervision for holes and small fasteners.",
-      "steps": ["Cut two measured links and join them with a loose paper-fastener pivot.", "Fix the base link's pivot to a cardboard board and mark a coordinate grid.", "Place the tip at five targets; record approximate joint angles.", "Compare fully stretched and folded positions. Identify unreachable targets."],
+      "steps": [
+        "Cut two measured links and join them with a loose paper-fastener pivot.",
+        "Fix the base link's pivot to a cardboard board and mark a coordinate grid.",
+        "Place the tip at five targets; record approximate joint angles.",
+        "Compare fully stretched and folded positions. Identify unreachable targets."
+      ],
       "learn": "Degrees of freedom, geometry, reach, joint looseness, and the difference between a desired position and a mechanism's constraints. This is an original educational mockup informed by real robotic manipulation work.",
       "stretch": "After trigonometry, predict tip coordinates for selected configurations and compare with measurements.",
-      "source": {"label": "NASA Johnson Space Center · Robotics", "url": "https://www.nasa.gov/reference/jsc-robotics/"}
+      "source": {
+        "label": "NASA Johnson Space Center · Robotics",
+        "url": "https://www.nasa.gov/reference/jsc-robotics/"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
     },
     {
       "id": "paper-structures",
       "title": "Make the same paper carry more",
       "summary": "Compare a flat paper span, a folded channel, and a corrugated shape using the same amount of material.",
       "materials": "Paper, two low stacks of books, ruler, a few small coins, notebook. Keep spans low and coin loads small.",
-      "steps": ["Choose one short span and keep the support spacing fixed.", "Make three cross-sectional shapes from equal sheets.", "Add coins gradually at the middle, recording visible bending and the load at which each loses its shape.", "Photograph the outcomes and explain how geometry changed the result."],
+      "steps": [
+        "Choose one short span and keep the support spacing fixed.",
+        "Make three cross-sectional shapes from equal sheets.",
+        "Add coins gradually at the middle, recording visible bending and the load at which each loses its shape.",
+        "Photograph the outcomes and explain how geometry changed the result."
+      ],
       "learn": "Material quantity is only part of structural performance. Cross-sectional shape and load path matter. This is a comparative tabletop exercise, not a test of flight-qualified structures.",
       "stretch": "Weigh each version if a kitchen scale is available and compare supported load per gram of paper.",
-      "source": {"label": "NASA · Structures education activity guide", "url": "https://www.nasa.gov/wp-content/uploads/2023/10/636827main-sci-filesguide4-00.pdf"}
+      "source": {
+        "label": "NASA · Structures education activity guide",
+        "url": "https://www.nasa.gov/wp-content/uploads/2023/10/636827main-sci-filesguide4-00.pdf"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
     },
     {
       "id": "ocean-on-table",
       "title": "An ocean engineering lab in a tray",
       "summary": "Use equal pieces of foil to investigate the tradeoff between carrying weight and remaining stable.",
       "materials": "Aluminum foil, shallow water tray, identical small weights, towel, ruler. Keep electronics away and supervise children around water and small parts.",
-      "steps": ["Make two differently shaped hulls from equal foil sheets.", "Add equal weights gradually and record the load before water enters.", "Repeat with weights near the center and near one side.", "Describe whether each failure was sinking, tipping, or water entering over an edge."],
+      "steps": [
+        "Make two differently shaped hulls from equal foil sheets.",
+        "Add equal weights gradually and record the load before water enters.",
+        "Repeat with weights near the center and near one side.",
+        "Describe whether each failure was sinking, tipping, or water entering over an edge."
+      ],
       "learn": "Buoyancy, displacement, stability, and failure classification. A high cargo count under ideal placement does not automatically mean a robust vessel.",
       "stretch": "Create a simple scorecard that values both centered capacity and tolerance of uneven loading.",
-      "source": {"label": "NOAA · Build a boat", "url": "https://www.noaa.gov/office-education/outreach-communication/hands-on-science-activities/build-a-boat"}
+      "source": {
+        "label": "NOAA · Build a boat",
+        "url": "https://www.noaa.gov/office-education/outreach-communication/hands-on-science-activities/build-a-boat"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
     },
     {
       "id": "micro-factory",
       "title": "Build a factory for five identical things",
       "summary": "Make five cardboard brackets, then create a simple locating template to see whether it improves consistency.",
       "materials": "Cardboard, pencil, ruler, blunt scissors, tape, notebook. No powered tools needed.",
-      "steps": ["Draw a bracket with three labeled dimensions and make five copies by hand.", "Measure the same feature on every copy and record the variation.", "Create a template or stop that helps position the material consistently; make another five.", "Compare dimensions and time, including the time spent making the template."],
+      "steps": [
+        "Draw a bracket with three labeled dimensions and make five copies by hand.",
+        "Measure the same feature on every copy and record the variation.",
+        "Create a template or stop that helps position the material consistently; make another five.",
+        "Compare dimensions and time, including the time spent making the template."
+      ],
       "learn": "Repeatability, fixtures, process design, and honest accounting of setup effort. This original beginner exercise connects to manufacturing metrology; a better-looking part is not automatically a better-controlled process.",
       "stretch": "Ask a second person to use your instructions and template. Record where the process still depends on your unspoken knowledge.",
-      "source": {"label": "NIST · Geometrical metrology for manufacturing", "url": "https://www.nist.gov/publications/geometrical-metrology-metal-additive-manufacturing"}
+      "source": {
+        "label": "NIST · Geometrical metrology for manufacturing",
+        "url": "https://www.nist.gov/publications/geometrical-metrology-metal-additive-manufacturing"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
     },
     {
       "id": "serviceable-spacecraft",
       "title": "Design a spacecraft someone can repair",
       "summary": "Make a cardboard equipment bay with a removable pretend module. Treat access and replacement as design requirements from the beginning.",
       "materials": "Small cardboard box, folded paper modules, tape or reusable fasteners, marker, timer; optional ordinary gloves.",
-      "steps": ["Create a box with three labeled modules and a simple access panel.", "Write a short replacement instruction for the middle module.", "Ask someone to remove and replace it using only your instructions. Note blocked access, confusing labels, and dropped pieces.", "Revise the layout and repeat. Compare mistakes as well as elapsed time."],
+      "steps": [
+        "Create a box with three labeled modules and a simple access panel.",
+        "Write a short replacement instruction for the middle module.",
+        "Ask someone to remove and replace it using only your instructions. Note blocked access, confusing labels, and dropped pieces.",
+        "Revise the layout and repeat. Compare mistakes as well as elapsed time."
+      ],
       "learn": "Maintainability, interfaces, human factors, and how packaging decisions shape operations. The mockup does not simulate vacuum or orbital dynamics; it isolates an important design question.",
       "stretch": "Try the task with ordinary gloves and fewer permitted hand positions, then explain what changes you would make for robotic servicing.",
-      "source": {"label": "NASA · Satellite servicing technologies", "url": "https://technology.nasa.gov/satellite-servicing"}
+      "source": {
+        "label": "NASA · Satellite servicing technologies",
+        "url": "https://technology.nasa.gov/satellite-servicing"
+      },
+      "evidence": "Record the setup, one prediction, at least three comparable observations, and one limitation. Change one variable at a time; describe a failed attempt as a result, not a missing badge.",
+      "question": "Which change improves the result, and what evidence would convince someone else?"
+    },
+    {
+      "id": "spacecraft-budget",
+      "title": "Give a small spacecraft a budget",
+      "summary": "Allocate mass and electrical energy to a fictional inspection satellite. Find the constraint before adding another instrument.",
+      "materials": [
+        "Paper or a spreadsheet",
+        "Calculator",
+        "Three imaginary instrument cards"
+      ],
+      "steps": [
+        "Choose illustrative limits: 1,000 g payload mass and 100 Wh usable energy.",
+        "Assign a camera 200 g and 10 W for 2 h; a computer 150 g and 20 W for 3 h; a radio 100 g and 15 W for 1 h.",
+        "Add mass and energy separately. Baseline: 450 g and 95 Wh.",
+        "Double camera operating time. The energy becomes 115 Wh, exceeding the allowance by 15 Wh.",
+        "Propose a shorter duty cycle. State what observations or communication you lose."
+      ],
+      "learn": "Mass, power, energy, units, duty cycles, and tradeoffs. These invented numbers do not describe flight hardware.",
+      "stretch": "Add an explicit reserve and explain whether it is already included in usable energy.",
+      "source": {
+        "label": "NASA · Systems Engineering Handbook",
+        "url": "https://www.nasa.gov/reference/systems-engineering-handbook/"
+      },
+      "question": "Can every subsystem fit while the mission still makes sense?",
+      "evidence": "Keep the baseline, revised budget, units, and the reason for the trade."
     }
   ]
 }

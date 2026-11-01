@@ -3,7 +3,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const base=new URL('../dist/books/',import.meta.url);
 const read=name=>fs.readFileSync(new URL(name,base),'utf8');
-const data=Object.fromEntries(['books','learning','philosophy','frontiers','domains'].map(x=>[x,JSON.parse(read(x+'.json'))]));
+const data=Object.fromEntries(['books','learning','philosophy','frontiers','domains','aerospace'].map(x=>[x,JSON.parse(read(x+'.json'))]));
 const normalize=s=>s.normalize('NFKD').replace(/[^a-z0-9]/gi,'').toLowerCase();
 assert.equal(data.books.length,500,'Release catalog has exactly 500 distinct selections');
 assert.equal(data.books.filter(x=>x.kind==='nonfiction').length,350);
@@ -23,6 +23,31 @@ const legacy=JSON.parse(fs.readFileSync(new URL('legacy-ids.json',import.meta.ur
 for(const [id,title] of Object.entries(legacy))assert.equal(data.books.find(b=>b.id===id)?.title,title,'Existing shelf ID '+id);
 assert.equal(data.domains.length,16);
 const indexed=new Map(data.books.map(b=>[b.id,b]));
+const bridgeIds=new Set(data.learning.bridges.map(b=>b.id));
+assert.equal(bridgeIds.size,25);
+assert.equal(data.learning.projects.length,7);
+assert.equal(data.aerospace.missions.length,6);
+assert.equal(data.aerospace.disciplines.length,10);
+assert.equal(new Set(data.aerospace.groups.flatMap(g=>g.ids)).size,25,'All bridges grouped');
+for(const b of data.learning.bridges){
+ for(const id of b.prerequisites||[])assert.ok(bridgeIds.has(id),b.id+' prerequisite '+id);
+ for(const id of b.bookIds||[])assert.ok(indexed.has(id),b.id+' book '+id);
+}
+for(const m of data.aerospace.missions){
+ for(const id of m.bridges)assert.ok(bridgeIds.has(id),m.id+' bridge '+id);
+ for(const id of m.disciplines)assert.ok(data.aerospace.disciplines.some(d=>d.id===id),m.id+' discipline '+id);
+ for(const id of m.bookIds)assert.ok(indexed.has(id),m.id+' book '+id);
+ assert.ok(data.learning.projects.some(p=>p.id===m.project),m.id+' project');
+ assert.ok(['arm','lever','energy','orbit','control'].includes(m.lab),m.id+' lab');
+}
+for(const d of data.aerospace.disciplines){
+ for(const id of d.bridges)assert.ok(bridgeIds.has(id),d.id+' bridge '+id);
+ for(const id of d.bookIds)assert.ok(indexed.has(id),d.id+' book '+id);
+}
+for(const g of data.aerospace.textbookGroups){
+ assert.ok(bridgeIds.has(g.bridge));
+ for(const r of g.refs){if(r.bookId)assert.ok(indexed.has(r.bookId));assert.equal(new URL(r.source.url).protocol,'https:');}
+}
 for(const d of data.domains){
  assert.ok(d.bookIds.length>=3,d.id+' populated');assert.equal(d.starters.length,3,d.id+' three starter books');
  assert.equal(new Set(d.bookIds).size,d.bookIds.length,d.id+' duplicate membership');
@@ -34,12 +59,13 @@ const categorized=new Set(data.domains.flatMap(x=>x.bookIds));
 assert.equal(categorized.size,500,'Every book appears in at least one knowledge field');
 const el={addEventListener(){},querySelector(){return null},querySelectorAll(){return []},classList:{add(){},remove(){}},textContent:'',innerHTML:''};
 const ctx=vm.createContext({document:{querySelector:()=>el,addEventListener(){},querySelectorAll:()=>[],activeElement:{tagName:'BODY'}},window:{addEventListener(){},scrollTo(){}},location:{hash:''},console,Set,Map,JSON,URL,Blob,setTimeout,clearTimeout,localStorage:{getItem(){return null},setItem(){}}});
-for(const name of ['journey.js','atlas.js','app.js'])vm.runInContext(read(name).replace(/\ninit\(\);\s*$/,''),ctx,{filename:name});
-vm.runInContext(`books=${JSON.stringify(data.books)};learning=${JSON.stringify(data.learning)};philosophy=${JSON.stringify(data.philosophy)};frontierData=${JSON.stringify(data.frontiers)};atlasDomains=${JSON.stringify(data.domains)};index=new Map(books.map(b=>[b.id,b]));expandRoutes();`,ctx);
-const pages=['basecamp()','atlasPage()','journeyPage()','ideasPage()','nightPage()','frontiersPage()','projectsPage()','journalPage()','workbenchPage()','catalog()','shelfPage()','banksPage()','routesPage()','aboutPage()','v2About()',...data.domains.map(d=>`domainPage('${d.id}')`),...data.learning.bridges.map(b=>`lessonPage('${b.id}')`),...data.frontiers.frontiers.map(f=>`frontierPage('${f.id}')`)];
+for(const name of ['journey.js','atlas.js','aerospace.js','app.js'])vm.runInContext(read(name).replace(/\ninit\(\);\s*$/,''),ctx,{filename:name});
+vm.runInContext(`books=${JSON.stringify(data.books)};learning=${JSON.stringify(data.learning)};philosophy=${JSON.stringify(data.philosophy)};frontierData=${JSON.stringify(data.frontiers)};atlasDomains=${JSON.stringify(data.domains)};aerospace=${JSON.stringify(data.aerospace)};index=new Map(books.map(b=>[b.id,b]));expandRoutes();expandAeroRoutes();`,ctx);
+const pages=['aerospaceJourney()','missionsPage()','specialtiesPage()',...data.aerospace.missions.map(m=>`missionPage('${m.id}')`),...data.learning.projects.map(p=>`projectPage('${p.id}')`),...['energy','orbit','control'].map(id=>`aeroLabPage('${id}')`),'basecamp()','atlasPage()','journeyPage()','ideasPage()','nightPage()','frontiersPage()','projectsPage()','journalPage()','workbenchPage()','catalog()','shelfPage()','banksPage()','routesPage()','aboutPage()','v2About()',...data.domains.map(d=>`domainPage('${d.id}')`),...data.learning.bridges.map(b=>`lessonPage('${b.id}')`),...data.frontiers.frontiers.map(f=>`frontierPage('${f.id}')`)];
+pages.push('textbooksPage()',...data.aerospace.disciplines.map(d=>`specialtiesPage('${d.id}')`));
 for(const p of pages){const html=vm.runInContext(p,ctx);assert.ok(html.length>400,p);assert.ok(!/undefined|NaN|data-open=""/.test(html),p);}
 const routes=JSON.parse(vm.runInContext('JSON.stringify(paths.map(p=>({id:p.id,name:p.name,got:pathBooks(p).length,want:p.titles.length})))',ctx));
-assert.equal(routes.length,20);
+assert.equal(routes.length,26);
 for(const p of routes){assert.equal(p.got,p.want,p.name);assert.ok(vm.runInContext(`routePage('${p.id}')`,ctx).length>1000,p.name);}
 for(const d of data.domains){assert.equal(vm.runInContext(`filters={domain:'${d.id}',kind:'all',category:'all',stage:'all',difficulty:'all',q:'',sort:'curated',view:'grid'};filteredBooks().length`,ctx),d.bookIds.length,d.id+' filter');}
 assert.equal(vm.runInContext("filters.domain='all';filters.kind='fiction';filteredBooks().length",ctx),150);
@@ -58,6 +84,24 @@ assert.ok(vm.runInContext('capturedExport.content',ctx).includes('I checked the 
 assert.equal(vm.runInContext("esc('<img onerror=alert(1)>')",ctx),'&lt;img onerror=alert(1)&gt;');
 assert.ok(vm.runInContext('labAngle=90;labLength=20;armResult()',ctx).includes('20.0'));
 assert.ok(vm.runInContext('labEffort=.5;labLoad=50;leverResult()',ctx).includes('10.0'));
+const calc=code=>JSON.parse(vm.runInContext('JSON.stringify('+code+')',ctx));
+assert.deepEqual(calc('AeroMath.energy(20,3,100,.8)'),{used:60,available:80,runtime:4});
+assert.equal(calc('AeroMath.energy(40,3,100,.8)').runtime,2,'Doubling load halves runtime');
+assert.equal(calc('AeroMath.energy(20,6,100,.8)').used,120,'Doubling time doubles energy');
+const low=calc('AeroMath.orbit(400)'),high=calc('AeroMath.orbit(35786)');
+assert.ok(Math.abs(low.speed-7.669)<.002,'400 km speed independently expected about 7.67 km/s');
+assert.ok(Math.abs(low.period-92.56)<.1,'400 km period about 92.6 min');
+assert.ok(Math.abs(high.period-1436.1)<1,'Geostationary altitude period about one sidereal day');
+assert.ok(high.speed<low.speed&&high.period>low.period,'Orbital monotonic behavior');
+const response=calc('AeroMath.control(2,4)');
+assert.equal(response[0].y,0);
+assert.ok(Math.abs(response.at(-1).y-2/3)<.000001,'Proportional steady-state error retained');
+assert.ok(response.every((p,i)=>p.y>=0&&p.y<1&&(!i||p.y>=response[i-1].y)),'No overshoot in a first-order model');
+assert.ok(calc('AeroMath.control(0,4)').every(p=>p.y===0),'Zero gain produces no response');
+assert.ok(calc('AeroMath.control(2,2)')[4].y>response[4].y,'Smaller plant time constant speeds response');
+for(const call of ['energy(0,1,100,.8)','energy(20,1,100,2)','energy(NaN,1,100,.8)','orbit(-1)','orbit(Infinity)','control(-1,4)','control(2,0)'])assert.throws(()=>vm.runInContext('AeroMath.'+call,ctx),/Invalid|outside/);
+assert.equal(vm.runInContext('cleanJourney({}).active',ctx),'arithmetic','New learners start before algebra');
+assert.equal(vm.runInContext("cleanJourney({active:'algebra'}).active",ctx),'algebra','Existing chosen bridge preserved');
 const html=read('index.html');
 assert.ok(html.includes('https://ditchthescroll.com/books/'));
 assert.ok(!/200 books|100 nonfiction|100 imagined|The 200/.test(html));

@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "reviewed": "2026-11-01",
+  "sources": {
+    "math": {
+      "label": "OpenStax · Prealgebra 2e",
+      "url": "https://openstax.org/details/books/prealgebra-2e"
+    },
+    "physics": {
+      "label": "OpenStax · University Physics Volume 1",
+      "url": "https://openstax.org/details/books/university-physics-volume-1"
+    },
+    "thermal": {
+      "label": "OpenStax · University Physics Volume 2",
+      "url": "https://openstax.org/details/books/university-physics-volume-2"
+    },
+    "aero": {
+      "label": "NASA · Beginner’s Guide to Aeronautics",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/"
+    },
+    "astrobee": {
+      "label": "NASA · Astrobee",
+      "url": "https://www.nasa.gov/ames/astrobee/"
+    },
+    "assembly": {
+      "label": "NASA · ARMADAS assembly research",
+      "url": "https://www.nasa.gov/automated-reconfigurable-mission-adaptive-digital-assembly-systems-armadas/"
+    },
+    "ucsd": {
+      "label": "UCSD · Computational Flow Physics teaching",
+      "url": "https://flowphysics.ucsd.edu/teaching/"
+    },
+    "control": {
+      "label": "Åström & Murray · Feedback Systems",
+      "url": "https://www.cds.caltech.edu/~murray/FBS/Second_Edition.html"
+    },
+    "orbit": {
+      "label": "NASA · Orbits and Kepler’s laws",
+      "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+    },
+    "systems": {
+      "label": "NASA · Systems Engineering Handbook",
+      "url": "https://www.nasa.gov/reference/systems-engineering-handbook/"
+    }
+  },
+  "missions": [
+    {
+      "id": "inspect",
+      "title": "Help a spacecraft inspect itself",
+      "chain": "Sensing → geometry → trustworthy action",
+      "summary": "A robot must observe equipment, locate what it sees, and report useful evidence without requiring constant human attention.",
+      "constraint": "A measurement is only useful when its location, uncertainty, and meaning are known. The robot also needs a safe response when perception or motion fails.",
+      "subsystems": [
+        "Camera / observe",
+        "Estimation / locate",
+        "Planner / choose",
+        "Control / move",
+        "Report / verify"
+      ],
+      "bridges": [
+        "statistics",
+        "linear-algebra",
+        "feedback"
+      ],
+      "disciplines": [
+        "robotics",
+        "controls",
+        "avionics"
+      ],
+      "bookIds": [
+        "n080",
+        "n047",
+        "n086",
+        "n089"
+      ],
+      "project": "cardboard-arm",
+      "lab": "control",
+      "source": {
+        "label": "NASA · Astrobee",
+        "url": "https://www.nasa.gov/ames/astrobee/"
+      },
+      "today": "NASA’s Astrobee robots provide an established ISS research platform for free-flying robotics. An enclosed station environment differs substantially from free space.",
+      "research": "Autonomous inspection and coordinated robot work remain task- and environment-dependent.",
+      "horizon": "Self-maintaining settlements would require far more capable sensing, repair, logistics, and fault recovery."
+    },
+    {
+      "id": "assemble",
+      "title": "Build something too large to launch whole",
+      "chain": "Structures → interfaces → assembly",
+      "summary": "An orbital assembly team has to align parts, make a connection, inspect it, and recover when it does not fit.",
+      "constraint": "An arm pushes back on its host. Flexible structures change their behavior as they grow. A joint must be inspectable, not merely visually aligned.",
+      "subsystems": [
+        "Structure / carry loads",
+        "Robot / align",
+        "Interface / connect",
+        "Sensor / inspect",
+        "Controller / recover"
+      ],
+      "bridges": [
+        "algebra",
+        "trigonometry",
+        "free-body",
+        "materials-manufacturing"
+      ],
+      "disciplines": [
+        "structures",
+        "robotics",
+        "systems"
+      ],
+      "bookIds": [
+        "n001",
+        "n031",
+        "n086",
+        "n036"
+      ],
+      "project": "serviceable-spacecraft",
+      "lab": "arm",
+      "source": {
+        "label": "NASA · ARMADAS assembly research",
+        "url": "https://www.nasa.gov/automated-reconfigurable-mission-adaptive-digital-assembly-systems-armadas/"
+      },
+      "today": "NASA ARMADAS demonstrates modular robotic assembly research on the ground. It is a useful case in coordinated construction.",
+      "research": "Taking such capabilities into mission environments requires additional integration, environmental qualification, and validation.",
+      "horizon": "An orbital shipyard manufacturing arbitrary vehicles from local resources is a much larger leap."
+    },
+    {
+      "id": "habitat",
+      "title": "Keep somewhere to live working",
+      "chain": "Energy → ecology → human needs",
+      "summary": "A habitat must continuously support its occupants, remove waste heat, provide usable resources, and remain maintainable.",
+      "constraint": "Closing a water loop does not close every material loop. Reliability depends on consumables, repair, power, interfaces, and people.",
+      "subsystems": [
+        "Power / supply",
+        "Water / circulate",
+        "Air / manage",
+        "Thermal / reject heat",
+        "People / operate"
+      ],
+      "bridges": [
+        "fractions",
+        "fluids",
+        "thermodynamics",
+        "writing-ge"
+      ],
+      "disciplines": [
+        "thermal",
+        "systems",
+        "habitation"
+      ],
+      "bookIds": [
+        "n005",
+        "n008",
+        "n022",
+        "n036"
+      ],
+      "project": "spacecraft-budget",
+      "lab": "energy",
+      "source": {
+        "label": "NASA · Systems Engineering Handbook",
+        "url": "https://www.nasa.gov/reference/systems-engineering-handbook/"
+      },
+      "today": "Crewed stations demonstrate long-duration life-support operations with resupply and maintenance. This is not complete independence from Earth.",
+      "research": "Longer missions require better resource recovery, monitoring, logistics, and maintainability.",
+      "horizon": "Large self-sufficient settlements remain a conditional possibility, not a scheduled engineering deliverable."
+    },
+    {
+      "id": "navigate",
+      "title": "Find a path through space",
+      "chain": "Vectors → dynamics → navigation",
+      "summary": "A mission needs to know where it is, where it is going, and which corrections are physically possible.",
+      "constraint": "Position, velocity, orientation, and time are distinct quantities. Measurements are imperfect; propellant and power are limited.",
+      "subsystems": [
+        "Orbit / evolve",
+        "Sensor / measure",
+        "Estimator / infer",
+        "Guidance / choose",
+        "Actuator / correct"
+      ],
+      "bridges": [
+        "units",
+        "vectors",
+        "orbits",
+        "space-propulsion"
+      ],
+      "disciplines": [
+        "orbital",
+        "controls",
+        "propulsion"
+      ],
+      "bookIds": [
+        "n002",
+        "n007",
+        "n034",
+        "n037"
+      ],
+      "project": "spacecraft-budget",
+      "lab": "orbit",
+      "source": {
+        "label": "NASA · Orbits and Kepler’s laws",
+        "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+      },
+      "today": "Orbital motion and spacecraft navigation have extensive flight heritage. Our circular model isolates one relationship.",
+      "research": "Autonomous navigation and mission-specific guidance add constraints well beyond this introductory model.",
+      "horizon": "Routine travel between large off-world communities depends on infrastructure and economics as well as trajectories."
+    },
+    {
+      "id": "power",
+      "title": "Power the mission. Lose the heat.",
+      "chain": "Electrical energy → thermal balance",
+      "summary": "Useful computation, sensing, communication, and actuation all need energy and produce thermal consequences.",
+      "constraint": "Enough stored energy does not ensure acceptable temperatures. Vacuum changes how heat can leave an external surface.",
+      "subsystems": [
+        "Source / generate",
+        "Storage / buffer",
+        "Distribution / deliver",
+        "Load / consume",
+        "Radiator / reject"
+      ],
+      "bridges": [
+        "energy",
+        "thermodynamics",
+        "differential-equations"
+      ],
+      "disciplines": [
+        "avionics",
+        "thermal",
+        "systems"
+      ],
+      "bookIds": [
+        "n080",
+        "n097",
+        "n036"
+      ],
+      "project": "spacecraft-budget",
+      "lab": "energy",
+      "source": {
+        "label": "OpenStax · University Physics Volume 2",
+        "url": "https://openstax.org/details/books/university-physics-volume-2"
+      },
+      "today": "Conservation of energy provides the starting point for thermal and electrical accounting. Practical hardware requires detailed analysis and testing.",
+      "research": "Power availability, operating cycles, environmental conditions, and reliability must be analyzed together.",
+      "horizon": "Large orbital computing facilities are an engineering and economic proposition, not established inevitability."
+    },
+    {
+      "id": "flight",
+      "title": "Make flight understandable",
+      "chain": "Forces → flow → test",
+      "summary": "Aircraft design connects the forces on a body to its structure, propulsion, stability, and mission.",
+      "constraint": "A useful calculation needs an operating condition. A coefficient or a favorable test result is not valid across every speed and angle.",
+      "subsystems": [
+        "Air / exert forces",
+        "Wing / carry loads",
+        "Engine / exchange momentum",
+        "Controls / respond",
+        "Test / compare"
+      ],
+      "bridges": [
+        "graphs",
+        "free-body",
+        "aerodynamics",
+        "propulsion",
+        "numerical-methods"
+      ],
+      "disciplines": [
+        "aerodynamics",
+        "structures",
+        "propulsion"
+      ],
+      "bookIds": [
+        "n006",
+        "n001",
+        "n032",
+        "n033"
+      ],
+      "project": "paper-flight-lab",
+      "lab": "lever",
+      "source": {
+        "label": "NASA · Beginner’s Guide to Aeronautics",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/"
+      },
+      "today": "Aircraft flight rests on established physical principles and extensive experimental methods.",
+      "research": "New configurations still need validated analysis, ground tests, flight tests, and operational evidence.",
+      "horizon": "Future aircraft architectures depend on multiple constraints; a striking rendering does not settle them."
+    }
+  ],
+  "disciplines": [
+    {
+      "id": "robotics",
+      "name": "Space robotics",
+      "work": "Sense, manipulate, inspect, and recover.",
+      "preparation": "Geometry, programming, mechanics, and careful measurement.",
+      "practice": "Separate sensing, planning, actuation, and verification in one task.",
+      "bridges": [
+        "trigonometry",
+        "linear-algebra"
+      ],
+      "bookIds": [
+        "n047",
+        "n086"
+      ]
+    },
+    {
+      "id": "controls",
+      "name": "Control & estimation",
+      "work": "Infer the state and influence how a machine changes.",
+      "preparation": "Calculus, linear algebra, differential equations, and probability.",
+      "practice": "Compare a predicted response with the measured or simulated one.",
+      "bridges": [
+        "statistics",
+        "feedback"
+      ],
+      "bookIds": [
+        "n007",
+        "n089"
+      ]
+    },
+    {
+      "id": "avionics",
+      "name": "Avionics & embedded systems",
+      "work": "Make electronic systems work within timing and power limits.",
+      "preparation": "Circuits, programming, signals, sensing, and test methods.",
+      "practice": "List the sensors, computations, and outputs of an ordinary device.",
+      "bridges": [
+        "energy",
+        "functions"
+      ],
+      "bookIds": [
+        "n080",
+        "n018"
+      ]
+    },
+    {
+      "id": "orbital",
+      "name": "Orbital mechanics",
+      "work": "Connect gravity, motion, and mission geometry.",
+      "preparation": "Vectors, calculus, dynamics, and differential equations.",
+      "practice": "Distinguish altitude from orbital radius in a drawing.",
+      "bridges": [
+        "vectors",
+        "orbits"
+      ],
+      "bookIds": [
+        "n002",
+        "n034"
+      ]
+    },
+    {
+      "id": "structures",
+      "name": "Structures & manufacturing",
+      "work": "Carry loads with materials and parts that can be made and inspected.",
+      "preparation": "Statics, dynamics, materials, geometry, and structural analysis.",
+      "practice": "Trace a load path through a small cardboard structure.",
+      "bridges": [
+        "free-body",
+        "materials-manufacturing"
+      ],
+      "bookIds": [
+        "n001",
+        "n031"
+      ]
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal systems",
+      "work": "Account for energy and keep hardware within operating limits.",
+      "preparation": "Thermodynamics, heat transfer, fluids, and numerical methods.",
+      "practice": "Draw a boundary and all its energy flows.",
+      "bridges": [
+        "thermodynamics",
+        "fluids"
+      ],
+      "bookIds": [
+        "n097",
+        "n036"
+      ]
+    },
+    {
+      "id": "aerodynamics",
+      "name": "Fluids & aerodynamics",
+      "work": "Predict forces and behavior in moving fluids.",
+      "preparation": "Calculus, mechanics, thermodynamics, and numerical methods.",
+      "practice": "Make repeated paper-aircraft trials with one controlled change.",
+      "bridges": [
+        "fluids",
+        "aerodynamics",
+        "numerical-methods"
+      ],
+      "bookIds": [
+        "n006",
+        "n033"
+      ]
+    },
+    {
+      "id": "propulsion",
+      "name": "Propulsion",
+      "work": "Match momentum exchange and energy supply to a mission.",
+      "preparation": "Thermodynamics, fluids, chemistry, mechanics, and power systems.",
+      "practice": "Compare the requirements of launch and slow orbit adjustment.",
+      "bridges": [
+        "propulsion",
+        "space-propulsion"
+      ],
+      "bookIds": [
+        "n004",
+        "n037"
+      ]
+    },
+    {
+      "id": "systems",
+      "name": "Space systems integration",
+      "work": "Make interacting subsystems satisfy a mission together.",
+      "preparation": "Engineering breadth, requirements, verification, and communication.",
+      "practice": "Write one requirement that can actually be checked.",
+      "bridges": [
+        "writing-ge",
+        "energy"
+      ],
+      "bookIds": [
+        "n036",
+        "n039"
+      ]
+    },
+    {
+      "id": "habitation",
+      "name": "Human habitation",
+      "work": "Keep people supported by maintainable physical and social systems.",
+      "preparation": "Thermal systems, biology, fluids, reliability, and human factors.",
+      "practice": "Map dependencies among air, water, power, heat, repair, and crew.",
+      "bridges": [
+        "fluids",
+        "writing-ge"
+      ],
+      "bookIds": [
+        "n005",
+        "n008"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "01 / Begin where you are",
+      "summary": "Arithmetic, fractions, units, and pictures before symbols.",
+      "ids": [
+        "arithmetic",
+        "fractions",
+        "units",
+        "graphs",
+        "algebra",
+        "functions"
+      ]
+    },
+    {
+      "name": "02 / Describe a physical world",
+      "summary": "Geometry, forces, change, and evidence.",
+      "ids": [
+        "trigonometry",
+        "vectors",
+        "free-body",
+        "derivatives",
+        "integrals",
+        "statistics"
+      ]
+    },
+    {
+      "name": "03 / Understand aerospace systems",
+      "summary": "Energy, flow, flight, structures, and propulsion.",
+      "ids": [
+        "energy",
+        "thermodynamics",
+        "fluids",
+        "aerodynamics",
+        "propulsion",
+        "space-propulsion",
+        "orbits",
+        "materials-manufacturing"
+      ]
+    },
+    {
+      "name": "04 / Connect, compute, communicate",
+      "summary": "Later previews and habits that bring disciplines together.",
+      "ids": [
+        "differential-equations",
+        "linear-algebra",
+        "feedback",
+        "numerical-methods",
+        "writing-ge"
+      ]
+    }
+  ],
+  "textbookGroups": [
+    {
+      "id": "thermo",
+      "name": "Thermodynamics",
+      "preparation": "Algebra, units, energy and calculus-based physics. Begin by drawing a system boundary and accounting for energy crossing it.",
+      "bridge": "thermodynamics",
+      "refs": [
+        {
+          "title": "Fundamentals of Engineering Thermodynamics",
+          "author": "Michael J. Moran, Howard N. Shapiro, Daisie D. Boettner, Margaret B. Bailey",
+          "edition": "9th edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://www.wiley.com/en-us/fundamentals-of-engineering-thermodynamics-9th-edition-p-978111939138804"
+          },
+          "note": "Publisher-verified reference for systems, energy, properties and cycles. This is an editorial subject recommendation; no current UCSD assignment is asserted.",
+          "bookId": null
+        }
+      ]
+    },
+    {
+      "id": "fluids",
+      "name": "Fluids and aerodynamics",
+      "preparation": "Vectors, calculus, mechanics and conservation laws before aerodynamic analysis. Try the fluids bridge before opening an advanced chapter.",
+      "bridge": "fluids",
+      "refs": [
+        {
+          "title": "Fundamentals of Fluid Mechanics",
+          "author": "Philip M. Gerhart, Andrew L. Gerhart, John I. Hochstein",
+          "edition": "8th edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://flowphysics.ucsd.edu/teaching/"
+          },
+          "note": "The UCSD Flow Physics teaching page lists this edition for MAE 101A. This supports that listing only, not a promise about your future section.",
+          "bookId": null
+        },
+        {
+          "title": "Fundamentals of Aerodynamics",
+          "author": "John D. Anderson",
+          "edition": "6th edition in the course listing; publisher now shows 7th",
+          "source": {
+            "label": "Read the source",
+            "url": "https://flowphysics.ucsd.edu/teaching/"
+          },
+          "note": "The same teaching page lists the 6th edition for MAE 104. The existing catalog record links the publisher. Match an assigned edition to your actual course.",
+          "bookId": "n033"
+        },
+        {
+          "title": "Modern Compressible Flow: With Historical Perspective",
+          "author": "John D. Anderson",
+          "edition": "4th edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://www.mheducation.com/highered/product/modern-compressible-flow-with-historical-perspective-anderson.html"
+          },
+          "note": "An editorial next reference after thermodynamics and fluid mechanics, for flows where changing density matters.",
+          "bookId": null
+        }
+      ]
+    },
+    {
+      "id": "propulsion",
+      "name": "Fundamentals of propulsion",
+      "preparation": "Thermodynamics, fluid mechanics, momentum balances and calculus. Learn how a component changes the whole vehicle before focusing on a performance number.",
+      "bridge": "propulsion",
+      "refs": [
+        {
+          "title": "Mechanics and Thermodynamics of Propulsion",
+          "author": "Philip Hill, Carl Peterson",
+          "edition": "2nd edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://www.pearson.com/en-us/subject-catalog/p/mechanics-and-thermodynamics-of-propulsion/P200000003466"
+          },
+          "note": "Pearson identifies the authors and edition. This is a later analytical reference, not an immediate purchase requirement.",
+          "bookId": null
+        }
+      ]
+    },
+    {
+      "id": "space-propulsion",
+      "name": "Space propulsion",
+      "preparation": "Conservation laws, thermodynamics, fluids and orbital mechanics. Electric propulsion also brings electromagnetism, plasma physics and spacecraft power into the picture.",
+      "bridge": "space-propulsion",
+      "refs": [
+        {
+          "title": "Rocket Propulsion Elements",
+          "author": "George P. Sutton, Oscar Biblarz, James H. Morehart",
+          "edition": "10th edition in the existing catalog",
+          "source": {
+            "label": "Read the source",
+            "url": "https://www.wiley.com/en-gb/rocket-propulsion-elements-10th-edition-p-9781394187218"
+          },
+          "note": "Use the existing catalog record for staged reading notes and the publisher source.",
+          "bookId": "n037"
+        },
+        {
+          "title": "Fundamentals of Electric Propulsion: Ion and Hall Thrusters",
+          "author": "Dan M. Goebel, Ira Katz",
+          "edition": "JPL Space Science and Technology Series, original volume",
+          "source": {
+            "label": "Read the source",
+            "url": "https://descanso.jpl.nasa.gov/SciTechBook/st_series1_chapter.html"
+          },
+          "note": "JPL hosts lawful chapter downloads. This is the original Goebel–Katz volume, not a claim about the newest edition. Read after the mathematical and physical prerequisites.",
+          "bookId": null
+        }
+      ]
+    },
+    {
+      "id": "cfd",
+      "name": "Computational fluid mechanics",
+      "preparation": "Programming, linear algebra, differential equations, numerical error and fluid mechanics. A convincing image is not evidence that a simulation is correct.",
+      "bridge": "numerical-methods",
+      "refs": [
+        {
+          "title": "Computational Fluid Dynamics: The Basics with Applications",
+          "author": "John D. Anderson",
+          "edition": "1st edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://flowphysics.ucsd.edu/teaching/"
+          },
+          "note": "The UCSD Flow Physics page lists this for MAE 185 and MAE 290C. The course evidence is a dated teaching-page listing, not enrollment advice.",
+          "bookId": null
+        },
+        {
+          "title": "An Introduction to Computational Fluid Dynamics: The Finite Volume Method",
+          "author": "H. K. Versteeg, W. Malalasekera",
+          "edition": "2nd edition",
+          "source": {
+            "label": "Read the source",
+            "url": "https://www.pearson.com/en-gb/subject-catalog/p/Versteeg-An-Introduction-to-Computational-Fluid-Dynamics-The-Finite-Volume-Method-2nd-Edition/P200000005670?view=educator"
+          },
+          "note": "Publisher-verified alternative for finite-volume methods. Compare a model with a known solution and check sensitivity to numerical choices.",
+          "bookId": null
+        }
+      ]
+    }
+  ]
+}
